@@ -62,7 +62,11 @@ footer p { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--m
   footer { flex-direction: column; gap: 0.5rem; text-align: center; }
 }
 
-.hero { min-height: 90vh; display: flex; flex-direction: column; justify-content: center; padding-top: 6rem; padding-bottom: 3rem; }
+.hero { min-height: 90vh; display: flex; flex-direction: column; justify-content: center; padding-top: 6rem; padding-bottom: 3rem; position: relative; overflow: hidden; }
+.hero-video-wrap { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+.hero-video-wrap video { width: 100%; height: 100%; object-fit: cover; opacity: 0.18; }
+.hero-video-wrap::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, var(--paper) 0%, transparent 30%, transparent 70%, var(--paper) 100%); }
+.hero > .container { position: relative; z-index: 1; }
 .hero-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.8s ease 0.2s forwards; }
 .hero-heading { opacity: 0; animation: fadeUp 0.8s ease 0.4s forwards; margin-bottom: 2rem; }
 .hero-intro { font-size: 1.15rem; color: var(--muted-dark); max-width: 640px; line-height: 1.75; margin-bottom: 2rem; opacity: 0; animation: fadeUp 0.8s ease 0.55s forwards; font-weight: 300; }
@@ -132,6 +136,11 @@ footer p { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--m
 <nav><a href="index.html" class="nav-logo">KMD — Portfolio</a><div class="nav-links"><a href="index.html" class="active">Home</a><a href="case-study-freelance.html">Freelance work</a><a href="case-study-mip.html">Marketing plans</a><a href="case-study-football.html">Community</a><a href="#contact">Contact</a></div></nav>
 
 <section class="hero">
+  <div class="hero-video-wrap">
+    <video autoplay muted loop playsinline>
+      <source src="hero-video.mp4" type="video/mp4">
+    </video>
+  </div>
   <div class="container">
     <p class="hero-eyebrow">Content · Strategy · Video</p>
     <h1 class="h1 hero-heading">Hi, I'm <em>Karan</em>.</h1>
