@@ -40,17 +40,8 @@ footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);let
 }
 
 .about-hero{padding:8rem 0 3rem}
-.about-hero .h1{margin:1rem 0 1.5rem}
-.about-hero p{font-size:1.1rem;color:var(--muted-dark);max-width:680px;line-height:1.8}
-.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:4rem;align-items:start;margin-top:2rem}
-.about-lead{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;line-height:1.55;color:var(--ink);font-style:italic;margin-bottom:1.5rem}
+.about-content{max-width:720px;margin-top:2rem}
 .about-body p{color:var(--muted-dark);font-size:1rem;line-height:1.9;margin-bottom:1rem}
-.about-facts{background:var(--cream);border:1px solid var(--border-soft);border-radius:4px;padding:1.5rem 1.6rem}
-.about-facts-heading{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:.8rem}
-.about-fact{font-size:.9rem;color:var(--muted-dark);line-height:1.6;margin-bottom:.5rem}
-.about-fact:last-child{margin-bottom:0}
-.about-fact strong{color:var(--ink);font-weight:500}
-@media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:2rem}}
 </style></head><body>
 <nav><a href="index.html" class="nav-logo">KMD</a><div class="nav-links"><a href="index.html">Home</a><a href="about.html" class="active">About</a><a href="case-study-client.html">Client work</a><a href="case-study-mip.html">Marketing plans</a><a href="case-study-football.html">Community</a><a href="index.html#contact">Contact</a></div></nav>
 <section class="about-hero"><div class="container">
@@ -58,26 +49,15 @@ footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);let
   <h1 class="h1">I think like a marketer.<br><em>Shoot like a filmmaker.</em></h1>
 </div></section>
 
-<section><div class="container">
-  <div class="about-grid reveal">
-    <div>
-      <p class="about-lead">I'm drawn to cinematic expression, even in simple ideas — a gym floor, a workout, chocolate melting. The craft is in finding the frame that makes it feel intentional.</p>
+<section style="padding-top:0;"><div class="container">
+  <div class="about-content reveal">
       <div class="about-body">
-        <p>MSc Marketing from the University of Exeter. Freelance experience producing over 100 assets across fitness brands, lifestyle clients, and community projects — shot, directed, and edited end-to-end in DaVinci Resolve.</p>
-        <p>I've built two Instagram accounts from zero, grown a 100+ person community through word of mouth alone, and managed content across posts, reels, stories, carousels, and live sessions. Intentional, thoughtful execution — I care more about making something that lands than making more.</p>
-        <p>Visual storytelling, framing, pacing, mood. Strong attention to detail — the look and the feel are part of the message. Content that stops the scroll because it earns it.</p>
+        <p>I'm drawn to cinematic expression, even in simple things. The craft is in finding the frame that makes something feel intentional.</p>
+        <p>MSc in Marketing, University of Exeter. Experience producing 100+ content assets across fitness, lifestyle, and community brands, handling everything from concept to final edit in DaVinci Resolve.</p>
+        <p>I've built Instagram accounts from zero, grown engaged communities organically, and created content across reels, posts, stories, carousels, and live sessions.</p>
+        <p>My focus is simple: make work that lands. Strong ideas, clear framing, thoughtful pacing, and attention to detail, because how it looks and feels is part of what it says.</p>
       </div>
     </div>
-    <div>
-      <div class="about-facts">
-        <p class="about-facts-heading">A few things about me</p>
-        <p class="about-fact"><strong>Active:</strong> Football most weeks, moving most days — keeps my head right.</p>
-        <p class="about-fact"><strong>Watching:</strong> Films and shows — I'm always noticing how they're shot.</p>
-        <p class="about-fact"><strong>Cooking:</strong> Slow dinners, trying new things. Take coffee seriously.</p>
-        <p class="about-fact"><strong>Thinking:</strong> Deep thinker and reflective — I tend to sit with ideas before shaping them.</p>
-      </div>
-    </div>
-  </div>
 </div></section>
 <footer><p>Karan Melur Dinesh</p><p>2026</p></footer><script>
 const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:.12});
