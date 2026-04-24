@@ -81,12 +81,8 @@ footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);let
 .gallery-item.landscape img{aspect-ratio:16/9;object-fit:cover}
 .gallery-item.profile img{aspect-ratio:auto;max-height:560px;object-fit:contain;background:#fafaf8}
 .gallery-item.reels img{aspect-ratio:auto;max-height:560px;object-fit:contain;background:#fafaf8}
-.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
-.video-link{position:relative;display:block;border-radius:4px;overflow:hidden;background:var(--ink)}
-.video-link img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;opacity:.85;transition:opacity .3s}
-.video-link:hover img{opacity:1}
-.play-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:48px;height:48px;background:rgba(0,0,0,.6);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.2rem;transition:background .3s}
-.video-link:hover .play-icon{background:var(--accent)}
+.video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1.5rem 0}
+.video-grid video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:4px;background:var(--ink)}
 .insight-block{background:var(--ink);color:var(--paper);padding:2.8rem;margin:2.5rem 0;border-radius:4px;position:relative;overflow:hidden}
 .insight-block::before{content:'"';position:absolute;top:-3rem;left:1.5rem;font-family:'Cormorant Garamond',serif;font-size:14rem;color:rgba(200,71,26,.12);line-height:1;pointer-events:none}
 .insight-label{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:1.2rem}
@@ -96,7 +92,7 @@ footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);let
 .proof-card{padding:1.5rem 1.4rem;background:var(--cream);border-radius:4px}
 .proof-metric{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--accent);line-height:1}
 .proof-desc{font-size:.82rem;color:var(--muted-dark);margin-top:.5rem;line-height:1.6}
-@media(max-width:900px){.gallery-grid-4{grid-template-columns:1fr 1fr}.proof-row{grid-template-columns:1fr}.video-grid{grid-template-columns:1fr}}
+@media(max-width:900px){.video-grid-3{grid-template-columns:1fr}.gallery-grid-4{grid-template-columns:1fr 1fr}.proof-row{grid-template-columns:1fr}.video-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -131,14 +127,15 @@ footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);let
 
   <p class="cs-block-label" style="margin-top:2rem;">Video work</p>
   <div class="video-grid reveal">
-    <a href="https://youtube.com/shorts/b7XyyU89bJE" target="_blank" class="video-link">
-      <img src="img/kintore-spotify.jpg" alt="Kintore video 1" loading="lazy">
-      <span class="play-icon">▶</span>
-    </a>
-    <a href="https://youtube.com/shorts/KZR8-qyRi4o" target="_blank" class="video-link">
-      <img src="img/kintore-cinematic2.jpg" alt="Kintore video 2" loading="lazy">
-      <span class="play-icon">▶</span>
-    </a>
+    <video controls preload="metadata" playsinline>
+      <source src="kintore-snap.mp4" type="video/mp4">
+    </video>
+    <video controls preload="metadata" playsinline>
+      <source src="kintore-gym-reel.mp4" type="video/mp4">
+    </video>
+    <video controls preload="metadata" playsinline>
+      <source src="kintore-night.mp4" type="video/mp4">
+    </video>
   </div>
 
   <div class="gallery-grid-2 reveal">
