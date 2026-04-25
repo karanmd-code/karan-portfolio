@@ -66,12 +66,16 @@ footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);let
 }
 
 .about-hero{padding:8rem 0 3rem}
-.about-content{max-width:720px;margin-top:2rem}
+.about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:4rem;align-items:start;margin-top:2rem}
 .about-body p{color:var(--muted-dark);font-size:1rem;line-height:1.9;margin-bottom:1rem}
+.about-photo{width:100%;border-radius:4px;display:block}
+.about-facts{margin-top:2rem}
+.about-facts p{color:var(--muted-dark);font-size:.92rem;line-height:1.7;margin-bottom:.4rem}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:2rem}}
 </style>
 </head>
 <body>
-<nav><a href="index.html" class="nav-logo">KMD</a><div class="nav-links"><a href="index.html">Home</a><a href="about.html" class="active">About</a><a href="case-study-client.html">Client work</a><a href="case-study-mip.html">Marketing plans</a><a href="case-study-football.html">Community</a><a href="index.html#contact">Contact</a></div><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button></nav>
+<nav><a href="index.html" class="nav-logo">KMD</a><div class="nav-links"><a href="index.html">Home</a><a href="about.html" class="active">About</a><a href="case-study-client.html">Client work</a><a href="case-study-mip.html">Marketing plans</a><a href="case-study-exeter.html">Visit Exeter</a><a href="case-study-football.html">Community</a><a href="index.html#contact">Contact</a></div><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button></nav>
 
 <section class="about-hero"><div class="container">
   <p class="label">About</p>
@@ -79,7 +83,7 @@ footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);let
 </div></section>
 
 <section style="padding-top:0;"><div class="container">
-  <div class="about-content reveal">
+  <div class="about-grid reveal">
     <div class="about-body">
       <p>I'm drawn to cinematic expression, even in simple things. The craft is in finding the frame that makes something feel intentional.</p>
       <p>MSc in Marketing, University of Exeter. Experience producing 100+ content assets across fitness, lifestyle, and community brands, handling everything from concept to final edit in DaVinci Resolve.</p>
