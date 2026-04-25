@@ -85,9 +85,9 @@ footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);let
 .evidence-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
 .evidence-grid-2 img{width:100%;display:block;border-radius:4px}
 .evidence-grid-2.square img{aspect-ratio:1/1;object-fit:cover}
-.evidence-grid-2.landscape img{aspect-ratio:16/9;object-fit:cover}
-.evidence-grid-2.wa img{aspect-ratio:auto;max-height:600px;object-fit:contain;background:#fafaf8}
-.evidence-grid-2.doc img{aspect-ratio:auto;max-height:520px;object-fit:contain;background:#fafaf8}
+.evidence-grid-2.landscape img{aspect-ratio:16/9;object-fit:cover;height:100%}
+.evidence-grid-2.wa img{aspect-ratio:auto;height:480px;object-fit:contain;background:#fafaf8}
+.evidence-grid-2.doc img{aspect-ratio:auto;height:420px;object-fit:contain;background:#fafaf8}
 .evidence-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
 .evidence-grid-3 img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px}
 @media(max-width:900px){
@@ -118,12 +118,10 @@ footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);let
   </div>
 </section>
 
-<div style="background:var(--ink);">
-  <div style="max-width:1200px;margin:0 auto;">
-    <video autoplay muted loop playsinline style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover;">
-      <source src="football-hero.mp4" type="video/mp4">
-    </video>
-  </div>
+<div style="background:var(--ink);width:100%;">
+  <video autoplay muted loop playsinline style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover;">
+    <source src="football-hero.mp4" type="video/mp4">
+  </video>
 </div>
 
 

@@ -95,19 +95,11 @@ footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);let
 .proof-desc{font-size:.82rem;color:var(--muted-dark);margin-top:.5rem;line-height:1.6}
 @media(max-width:900px){.video-grid-3{grid-template-columns:1fr}.gallery-grid-4{grid-template-columns:1fr 1fr}.proof-row{grid-template-columns:1fr}.video-grid{grid-template-columns:1fr}}
 
-.testimonial-section{margin:3rem 0}
-.testimonial-slider{position:relative;overflow:hidden;background:var(--ink);border-radius:4px;padding:2.5rem;min-height:340px}
-.testimonial-slide{display:none;animation:fadeIn .5s ease}
-.testimonial-slide.active{display:flex;gap:2.5rem;align-items:center;justify-content:center}
-.testimonial-slide img{width:260px;border-radius:6px;flex-shrink:0;box-shadow:0 4px 20px rgba(0,0,0,.3)}
-.testimonial-text{color:var(--paper)}
-.testimonial-text p{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;line-height:1.6;font-style:italic;margin-bottom:1rem}
-.testimonial-attr{font-family:'DM Mono',monospace;font-size:.65rem;color:var(--accent);letter-spacing:.1em;margin-top:1rem}
-.testimonial-dots{display:flex;justify-content:center;gap:.5rem;margin-top:1rem}
-.testimonial-dot{width:8px;height:8px;border-radius:50%;background:var(--border);cursor:pointer;transition:background .2s}
-.testimonial-dot.active{background:var(--accent)}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@media(max-width:900px){.testimonial-slide.active{flex-direction:column}.testimonial-slide img{max-width:100%}}
+.feedback-block{background:var(--ink);color:var(--paper);padding:2.8rem;margin:2rem 0;border-radius:4px}
+.feedback-quote{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;line-height:1.6;color:var(--paper);font-style:italic;margin-bottom:1.5rem}
+.feedback-quote:last-of-type{margin-bottom:0}
+.feedback-attr{font-family:'DM Mono',monospace;font-size:.7rem;color:var(--accent);letter-spacing:.1em;margin-top:1.5rem}
+.feedback-attr span{display:block;color:#9a9080;font-size:.65rem;margin-top:.2rem;letter-spacing:.05em}
 </style>
 </head>
 <body>
@@ -229,52 +221,18 @@ footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);let
 
 <section><div class="container">
   <p class="label">Feedback</p>
-  <div class="testimonial-section">
-    <div class="testimonial-slider" id="testimonialSlider">
-      <div class="testimonial-slide active">
-        <img src="img/testimonial-4.jpg" alt="Client feedback">
-        <div class="testimonial-text">
-          <p>"Very nice"</p>
-          <p class="testimonial-attr">Yogish, Owner, Kintore Fitness Club<span style="display:block;color:#9a9080;font-size:.6rem;margin-top:.2rem;">Response to gym tour video</span></p>
-        </div>
-      </div>
-      <div class="testimonial-slide">
-        <img src="img/testimonial-5.jpg" alt="Client feedback">
-        <div class="testimonial-text">
-          <p>"Very nicely made and also kudos to the members for his dedication"</p>
-          <p class="testimonial-attr">Yogish, Owner, Kintore Fitness Club<span style="display:block;color:#9a9080;font-size:.6rem;margin-top:.2rem;">Response to member highlight video</span></p>
-        </div>
-      </div>
-      <div class="testimonial-slide">
-        <img src="img/testimonial-1.jpg" alt="Client feedback">
-        <div class="testimonial-text">
-          <p>"I LOVE IT. THE EDITING IS INSANE."</p>
-          <p class="testimonial-attr">Kintore Fitness Club member</p>
-        </div>
-      </div>
-      <div class="testimonial-slide">
-        <img src="img/testimonial-2.jpg" alt="Client feedback">
-        <div class="testimonial-text">
-          <p>"The 5 to 10 transformation with the shoulder press was muah"</p>
-          <p class="testimonial-attr">Kintore Fitness Club member</p>
-        </div>
-      </div>
-      <div class="testimonial-slide">
-        <img src="img/testimonial-3.jpg" alt="Client feedback">
-        <div class="testimonial-text">
-          <p>"Bro this is fire"</p>
-          <p class="testimonial-attr">Response to halation effect video</p>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-dots">
-      <span class="testimonial-dot active" onclick="showSlide(0)"></span>
-      <span class="testimonial-dot" onclick="showSlide(1)"></span>
-      <span class="testimonial-dot" onclick="showSlide(2)"></span>
-      <span class="testimonial-dot" onclick="showSlide(3)"></span>
-      <span class="testimonial-dot" onclick="showSlide(4)"></span>
-    </div>
+
+  <div class="feedback-block reveal">
+    <p class="feedback-quote">"Very nicely made and also kudos to the members for his dedication"</p>
+    <p class="feedback-attr">Yogish<span>Owner, Kintore Fitness Club</span></p>
   </div>
+
+  <div class="feedback-block reveal">
+    <p class="feedback-quote">"I LOVE IT. THE EDITING IS INSANE."</p>
+    <p class="feedback-quote">"The 5 to 10 transformation with the shoulder press was muah"</p>
+    <p class="feedback-attr">Kintore Fitness Club members</p>
+  </div>
+
 </div></section>
 
 <footer><p>Karan Melur Dinesh</p><p>2026</p></footer>
@@ -284,19 +242,6 @@ document.querySelectorAll('.reveal').forEach(el=>o.observe(el));
 document.querySelector('.nav-toggle')?.addEventListener('click',()=>document.querySelector('nav').classList.toggle('nav-open'));
 document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('nav-open')));
 
-function showSlide(n){
-  const slides=document.querySelectorAll('.testimonial-slide');
-  const dots=document.querySelectorAll('.testimonial-dot');
-  slides.forEach(s=>s.classList.remove('active'));
-  dots.forEach(d=>d.classList.remove('active'));
-  slides[n].classList.add('active');
-  dots[n].classList.add('active');
-}
-let currentSlide=0;
-setInterval(()=>{
-  currentSlide=(currentSlide+1)%5;
-  showSlide(currentSlide);
-},5000);
 </script>
 </body>
 </html>
