@@ -24,7 +24,7 @@ body{background:var(--paper);color:var(--ink);font-family:'Outfit',sans-serif;fo
 /* Nav with mobile hamburger */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.25rem 3rem;background:rgba(245,242,236,0.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
 .nav-logo{font-family:'DM Mono',monospace;font-size:.78rem;letter-spacing:.14em;color:var(--muted-dark);text-transform:uppercase;text-decoration:none}
-.nav-links{display:flex;gap:2rem}
+.nav-links{display:flex;gap:2rem;align-items:baseline}
 .nav-links a{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;font-family:'DM Mono',monospace}
 .nav-links a:hover,.nav-links a.active{color:var(--accent)}
 .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px}
@@ -81,18 +81,68 @@ footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);let
 .work-card-visual img{width:100%;display:block;transition:transform .4s}
 .work-card:hover .work-card-visual img{transform:scale(1.02)}
 .cover-exeter{background:var(--paper);border:1px solid var(--border-soft);padding:0 2.5rem;display:flex;flex-direction:column;justify-content:center;aspect-ratio:3/4}
-.cover-kicker{font-family:'DM Mono',monospace;font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
-.cover-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:400;color:var(--ink);line-height:1.1;margin:.8rem 0}
+.cover-kicker{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
+.cover-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.5vw,3.2rem);font-weight:400;color:var(--ink);line-height:1.1;margin:.8rem 0}
 .cover-divider{width:2.5rem;height:2px;background:var(--accent);margin:.8rem 0}
 .cover-sub{font-size:.85rem;color:var(--muted-dark);line-height:1.6}
 .contact{text-align:center;padding:5rem 0 6rem}
 .contact-lead{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;font-style:italic;color:var(--muted-dark);max-width:420px;margin:0 auto 2.5rem;line-height:1.6}
 .contact-links{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
 @media(max-width:900px){.work-grid{grid-template-columns:1fr}.hero-cta{flex-wrap:wrap}.hero-video-wrap{max-height:50vh}}
+
+.nav-dropdown{position:relative;display:flex;align-items:center}
+.nav-dropdown>a{cursor:pointer}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.6rem 0;margin-top:.8rem;min-width:160px;box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:200}
+.nav-dropdown-menu a{display:block;padding:.4rem 1.2rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);font-family:'DM Mono',monospace;text-decoration:none;transition:color .2s;white-space:nowrap}
+.nav-dropdown-menu a:hover{color:var(--accent)}
+.nav-dropdown:hover .nav-dropdown-menu{display:block}
+@media(max-width:900px){
+  .nav-dropdown-menu{position:static;transform:none;box-shadow:none;border:none;padding:0 0 0 1rem;margin:0;display:block;background:transparent}
+  .nav-dropdown-menu a{padding:.3rem 0}
+}
 </style>
 </head>
 <body>
-<nav><a href="index.html" class="nav-logo">KMD</a><div class="nav-links"><a href="index.html" class="active">Home</a><a href="about.html">About</a><a href="case-study-client.html">Client work</a><a href="case-study-mip.html">Marketing plans</a><a href="case-study-exeter.html">Visit Exeter</a><a href="case-study-football.html">Community</a><a href="#contact">Contact</a></div><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button></nav>
+<style>
+.dropdown{position:relative}
+.dropdown-toggle{cursor:pointer}
+.dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.8rem 0;min-width:200px;box-shadow:0 4px 12px rgba(0,0,0,.08);z-index:200}
+.dropdown:hover .dropdown-menu{display:block}
+.dropdown-menu a{display:block;padding:.4rem 1.2rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-family:'DM Mono',monospace;transition:color .2s}
+.dropdown-menu a:hover,.dropdown-menu a.active{color:var(--accent)}
+@media(max-width:900px){
+  .dropdown-menu{position:static;display:none;border:none;box-shadow:none;padding:.3rem 0 .3rem 1rem}
+  .nav-open .dropdown .dropdown-menu{display:block}
+}
+
+.nav-dropdown{position:relative;display:flex;align-items:center}
+.nav-dropdown>a{cursor:pointer}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.6rem 0;margin-top:.8rem;min-width:160px;box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:200}
+.nav-dropdown-menu a{display:block;padding:.4rem 1.2rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);font-family:'DM Mono',monospace;text-decoration:none;transition:color .2s;white-space:nowrap}
+.nav-dropdown-menu a:hover{color:var(--accent)}
+.nav-dropdown:hover .nav-dropdown-menu{display:block}
+@media(max-width:900px){
+  .nav-dropdown-menu{position:static;transform:none;box-shadow:none;border:none;padding:0 0 0 1rem;margin:0;display:block;background:transparent}
+  .nav-dropdown-menu a{padding:.3rem 0}
+}
+</style><nav>
+  <a href="index.html" class="nav-logo">KMD</a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <div class="nav-dropdown">
+      <a href="index.html#work">Projects</a>
+      <div class="nav-dropdown-menu">
+        <a href="case-study-client.html">Client work</a>
+        <a href="case-study-mip.html">Marketing plans</a>
+        <a href="case-study-exeter.html">Visit Exeter</a>
+        <a href="case-study-football.html">Community</a>
+      </div>
+    </div>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
 
 <div class="hero-video-section"><div class="hero-video-wrap">
 <video autoplay muted loop playsinline><source src="hero-video.mp4" type="video/mp4"></video>

@@ -22,7 +22,7 @@ html{scroll-behavior:smooth}
 body{background:var(--paper);color:var(--ink);font-family:'Outfit',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.25rem 3rem;background:rgba(245,242,236,0.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
 .nav-logo{font-family:'DM Mono',monospace;font-size:.78rem;letter-spacing:.14em;color:var(--muted-dark);text-transform:uppercase;text-decoration:none}
-.nav-links{display:flex;gap:2rem}
+.nav-links{display:flex;gap:2rem;align-items:baseline}
 .nav-links a{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;font-family:'DM Mono',monospace}
 .nav-links a:hover,.nav-links a.active{color:var(--accent)}
 .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px}
@@ -130,10 +130,60 @@ footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);let
   .creative-grid{grid-template-columns:1fr}
 }
 
+
+.nav-dropdown{position:relative;display:flex;align-items:center}
+.nav-dropdown>a{cursor:pointer}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.6rem 0;margin-top:.8rem;min-width:160px;box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:200}
+.nav-dropdown-menu a{display:block;padding:.4rem 1.2rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);font-family:'DM Mono',monospace;text-decoration:none;transition:color .2s;white-space:nowrap}
+.nav-dropdown-menu a:hover{color:var(--accent)}
+.nav-dropdown:hover .nav-dropdown-menu{display:block}
+@media(max-width:900px){
+  .nav-dropdown-menu{position:static;transform:none;box-shadow:none;border:none;padding:0 0 0 1rem;margin:0;display:block;background:transparent}
+  .nav-dropdown-menu a{padding:.3rem 0}
+}
 </style>
 </head>
 <body>
-<nav><a href="index.html" class="nav-logo">KMD</a><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="case-study-client.html">Client work</a><a href="case-study-mip.html" class="active">Marketing plans</a><a href="case-study-exeter.html">Visit Exeter</a><a href="case-study-football.html">Community</a><a href="index.html#contact">Contact</a></div><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button></nav>
+<style>
+.dropdown{position:relative}
+.dropdown-toggle{cursor:pointer}
+.dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.8rem 0;min-width:200px;box-shadow:0 4px 12px rgba(0,0,0,.08);z-index:200}
+.dropdown:hover .dropdown-menu{display:block}
+.dropdown-menu a{display:block;padding:.4rem 1.2rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-family:'DM Mono',monospace;transition:color .2s}
+.dropdown-menu a:hover,.dropdown-menu a.active{color:var(--accent)}
+@media(max-width:900px){
+  .dropdown-menu{position:static;display:none;border:none;box-shadow:none;padding:.3rem 0 .3rem 1rem}
+  .nav-open .dropdown .dropdown-menu{display:block}
+}
+
+.nav-dropdown{position:relative;display:flex;align-items:center}
+.nav-dropdown>a{cursor:pointer}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.6rem 0;margin-top:.8rem;min-width:160px;box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:200}
+.nav-dropdown-menu a{display:block;padding:.4rem 1.2rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);font-family:'DM Mono',monospace;text-decoration:none;transition:color .2s;white-space:nowrap}
+.nav-dropdown-menu a:hover{color:var(--accent)}
+.nav-dropdown:hover .nav-dropdown-menu{display:block}
+@media(max-width:900px){
+  .nav-dropdown-menu{position:static;transform:none;box-shadow:none;border:none;padding:0 0 0 1rem;margin:0;display:block;background:transparent}
+  .nav-dropdown-menu a{padding:.3rem 0}
+}
+</style><nav>
+  <a href="index.html" class="nav-logo">KMD</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <div class="nav-dropdown">
+      <a href="index.html#work" class="active">Projects</a>
+      <div class="nav-dropdown-menu">
+        <a href="case-study-client.html">Client work</a>
+        <a href="case-study-mip.html">Marketing plans</a>
+        <a href="case-study-exeter.html">Visit Exeter</a>
+        <a href="case-study-football.html">Community</a>
+      </div>
+    </div>
+    <a href="index.html#contact">Contact</a>
+  </div>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
 
 
 
