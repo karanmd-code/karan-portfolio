@@ -1,215 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Karan Melur Dinesh</title>
-<meta name="description" content="Content creator blending strategic marketing with a filmmaker's eye.">
-<meta property="og:title" content="Karan Melur Dinesh">
-<meta property="og:description" content="Content creator blending strategic marketing with a filmmaker's eye.">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>K</text></svg>">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-:root {
-  --ink: #1a1a1a; --ink-soft: #2a2a2a; --paper: #f5f2ec; --cream: #ede9e0;
-  --accent: #c8471a; --accent-soft: #e8a882; --muted: #7a7060; --muted-dark: #5a5448;
-  --border: #d5cfc4; --border-soft: #e5e0d6;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font-family:'Outfit',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
-
-/* Nav with mobile hamburger */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.25rem 3rem;background:rgba(245,242,236,0.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav-logo{font-family:'DM Mono',monospace;font-size:.78rem;letter-spacing:.14em;color:var(--muted-dark);text-transform:uppercase;text-decoration:none}
-.nav-links{display:flex;gap:2rem;align-items:baseline}
-.nav-links a{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;font-family:'DM Mono',monospace}
-.nav-links a:hover,.nav-links a.active{color:var(--accent)}
-.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px}
-.nav-toggle span{display:block;width:20px;height:2px;background:var(--ink);margin:4px 0;transition:all .3s}
-.nav-open .nav-toggle span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
-.nav-open .nav-toggle span:nth-child(2){opacity:0}
-.nav-open .nav-toggle span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
-
-.container{max-width:1200px;margin:0 auto;padding:0 3rem}
-section{padding:5rem 0}
-.label{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;display:flex;align-items:center;gap:1rem}
-.label::after{content:'';flex:1;height:1px;background:var(--border)}
-.h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5.5vw,4.8rem);font-weight:300;line-height:1.05}
-.h1 em{font-style:italic;color:var(--accent)}
-.h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.8vw,2.8rem);font-weight:300;line-height:1.15}
-.h2 em{font-style:italic;color:var(--accent)}
-.h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;line-height:1.3;margin:2rem 0 .8rem}
-.body-text{font-size:.95rem;color:var(--muted-dark);line-height:1.85;margin-bottom:1.2rem}
-.btn-primary{padding:.8rem 1.8rem;background:var(--ink);color:var(--paper);text-decoration:none;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-family:'DM Mono',monospace;transition:background .2s;border-radius:2px;display:inline-block}
-.btn-primary:hover{background:var(--accent)}
-.btn-ghost{padding:.8rem 1.8rem;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-family:'DM Mono',monospace;transition:all .2s;border-radius:2px;display:inline-block;background:transparent}
-.btn-ghost:hover{background:var(--ink);color:var(--paper)}
-.skill-tag{padding:.4rem 1rem;border:1px solid var(--border);border-radius:20px;font-family:'DM Mono',monospace;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);background:transparent;transition:all .2s;display:inline-block}
-.skill-tag:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-footer{padding:2rem 3rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto}
-footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
-
-@media(max-width:900px){
-  nav{padding:1rem 1.5rem}
-  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--border);flex-direction:column;padding:1.5rem 2rem;gap:1.2rem}
-  .nav-open .nav-links{display:flex}
-  .nav-toggle{display:block}
-  .container{padding:0 1.5rem}
-  section{padding:3rem 0}
-  footer{flex-direction:column;gap:.5rem;text-align:center}
-}
-
-.hero-video-section{padding-top:4.5rem;background:var(--ink)}
-.hero-video-wrap{width:100%;aspect-ratio:16/9;max-height:70vh;overflow:hidden}
-.hero-video-wrap video{width:100%;height:100%;object-fit:cover;display:block}
-.hero{padding:4rem 0 3rem}
-.hero-eyebrow{font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem;opacity:0;animation:fadeUp .8s ease .2s forwards}
-.hero-heading{opacity:0;animation:fadeUp .8s ease .4s forwards;margin-bottom:1.2rem}
-.hero-intro{font-size:1.15rem;color:var(--muted-dark);max-width:620px;line-height:1.75;margin-bottom:2rem;opacity:0;animation:fadeUp .8s ease .55s forwards}
-.hero-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2.5rem;opacity:0;animation:fadeUp .8s ease .7s forwards}
-.hero-cta{display:flex;gap:1rem;opacity:0;animation:fadeUp .8s ease .85s forwards}
-.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem;max-width:900px}
-.work-card{border-radius:4px;overflow:hidden;transition:transform .3s;display:block;text-decoration:none;color:inherit}
-.work-card:hover{transform:translateY(-3px)}
-.work-card-visual{width:100%;overflow:hidden}
-.work-card-visual img{width:100%;display:block;transition:transform .4s}
-.work-card:hover .work-card-visual img{transform:scale(1.02)}
-.cover-exeter{background:var(--paper);border:1px solid var(--border-soft);padding:0 2.5rem;display:flex;flex-direction:column;justify-content:center;aspect-ratio:3/4}
-.cover-kicker{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
-.cover-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.5vw,3.2rem);font-weight:400;color:var(--ink);line-height:1.1;margin:.8rem 0}
-.cover-divider{width:2.5rem;height:2px;background:var(--accent);margin:.8rem 0}
-.cover-sub{font-size:.85rem;color:var(--muted-dark);line-height:1.6}
-.contact{text-align:center;padding:5rem 0 6rem}
-.contact-lead{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;font-style:italic;color:var(--muted-dark);max-width:420px;margin:0 auto 2.5rem;line-height:1.6}
-.contact-links{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
-@media(max-width:900px){.work-grid{grid-template-columns:1fr}.hero-cta{flex-wrap:wrap}.hero-video-wrap{max-height:50vh}}
-
-.nav-dropdown{position:relative;display:flex;align-items:center}
-.nav-dropdown>a{cursor:pointer}
-.nav-dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.8rem 0;padding-top:1.2rem;min-width:170px;box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:200;margin-top:0}
-.nav-dropdown-menu::before{content:'';position:absolute;top:-10px;left:0;right:0;height:10px}
-.nav-dropdown-menu a{display:block;padding:.45rem 1.4rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);font-family:'DM Mono',monospace;text-decoration:none;transition:color .2s;white-space:nowrap}
-.nav-dropdown-menu a:hover{color:var(--accent)}
-.nav-dropdown:hover .nav-dropdown-menu{display:block}
-@media(max-width:900px){
-  .nav-dropdown-menu{position:static;transform:none;box-shadow:none;border:none;padding:0 0 0 1rem;margin:0;display:block;background:transparent}
-  .nav-dropdown-menu a{padding:.3rem 0}
-}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
 </head>
 <body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-.dropdown{position:relative}
-.dropdown-toggle{cursor:pointer}
-.dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.8rem 0;min-width:200px;box-shadow:0 4px 12px rgba(0,0,0,.08);z-index:200}
-.dropdown:hover .dropdown-menu{display:block}
-.dropdown-menu a{display:block;padding:.4rem 1.2rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-family:'DM Mono',monospace;transition:color .2s}
-.dropdown-menu a:hover,.dropdown-menu a.active{color:var(--accent)}
-@media(max-width:900px){
-  .dropdown-menu{position:static;display:none;border:none;box-shadow:none;padding:.3rem 0 .3rem 1rem}
-  .nav-open .dropdown .dropdown-menu{display:block}
-}
+  html,body{margin:0;padding:0;background:#f5f2ec;}
+  *{box-sizing:border-box;}
+  a{ -webkit-tap-highlight-color:transparent; }
+  ::selection{ background:#1a1a1a; color:#f5f2ec; }
+  img,video{display:block;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</helmet>
+<template id="__bundler_thumbnail"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="200" fill="#1a1a1a"/><text x="100" y="120" fill="#f5f2ec" font-family="Helvetica,Arial,sans-serif" font-size="50" font-weight="700" letter-spacing="3" text-anchor="middle">KMD</text></svg></template>
 
-.nav-dropdown{position:relative;display:flex;align-items:center}
-.nav-dropdown>a{cursor:pointer}
-.nav-dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.8rem 0;padding-top:1.2rem;min-width:170px;box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:200;margin-top:0}
-.nav-dropdown-menu::before{content:'';position:absolute;top:-10px;left:0;right:0;height:10px}
-.nav-dropdown-menu a{display:block;padding:.45rem 1.4rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);font-family:'DM Mono',monospace;text-decoration:none;transition:color .2s;white-space:nowrap}
-.nav-dropdown-menu a:hover{color:var(--accent)}
-.nav-dropdown:hover .nav-dropdown-menu{display:block}
-@media(max-width:900px){
-  .nav-dropdown-menu{position:static;transform:none;box-shadow:none;border:none;padding:0 0 0 1rem;margin:0;display:block;background:transparent}
-  .nav-dropdown-menu a{padding:.3rem 0}
-}
-</style><nav>
-  <a href="index.html" class="nav-logo">KMD</a>
-  <div class="nav-links">
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <div class="nav-dropdown">
-      <a href="index.html#work">Projects</a>
-      <div class="nav-dropdown-menu">
-        <a href="case-study-client.html">Client work</a>
-        <a href="case-study-mip.html">Marketing plans</a>
-        <a href="case-study-exeter.html">Visit Exeter</a>
-        <a href="case-study-football.html">Community</a>
+<div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400;background:#f5f2ec;color:#1a1a1a;line-height:1.65;overflow-x:hidden;">
+
+  <nav style="position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:19px clamp(20px,4vw,56px);background:rgba(245,242,236,0.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font-family:'DM Mono',monospace;">
+    <a href="index.html" style="font-size:12.5px;letter-spacing:0.16em;text-transform:uppercase;color:#1a1a1a;text-decoration:none;">KMD</a>
+    <div style="display:flex;gap:clamp(20px,2.6vw,38px);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;">
+      <a href="index.html" style="color:#1a1a1a;text-decoration:none;">Home</a>
+      <a href="#work" style="color:#8a7d68;text-decoration:none;" style-hover="color:#c8471a;">Work</a>
+      <a href="#contact" style="color:#8a7d68;text-decoration:none;" style-hover="color:#c8471a;">Contact</a>
+    </div>
+  </nav>
+
+  <div style="background:#1a1a1a;width:100%;overflow:hidden;">
+    <video autoplay muted loop playsinline preload="auto" style="width:100%;height:auto;max-height:76vh;object-fit:cover;">
+      <source src="videos/hero.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <section style="max-width:1280px;margin:0 auto;padding:clamp(60px,10vh,120px) clamp(20px,4vw,56px) clamp(56px,8vh,96px);">
+    <p style="font-family:'DM Mono',monospace;font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:#8a7d68;margin:0 0 28px;animation:fadeUp .7s ease .1s both;">Content Creation · Video · Strategy</p>
+    <h1 style="font-weight:600;font-size:clamp(2.7rem,7vw,6rem);line-height:1.0;letter-spacing:-0.035em;margin:0;max-width:16ch;animation:fadeUp .7s ease .2s both;">Hi, I'm Karan.</h1>
+    <p style="font-size:clamp(1.05rem,1.5vw,1.35rem);color:#5a5448;max-width:600px;line-height:1.6;margin:30px 0 0;font-weight:400;animation:fadeUp .7s ease .32s both;">I create content that blends strategic marketing with a filmmaker's eye — designed to hold attention and land with intent.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:34px;animation:fadeUp .7s ease .44s both;">
+      <span style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;border:1px solid #d5cfc4;border-radius:2px;padding:7px 13px;color:#5a5448;">Content Creation</span>
+      <span style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;border:1px solid #d5cfc4;border-radius:2px;padding:7px 13px;color:#5a5448;">DaVinci Resolve</span>
+      <span style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;border:1px solid #d5cfc4;border-radius:2px;padding:7px 13px;color:#5a5448;">Short-form Video</span>
+      <span style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;border:1px solid #d5cfc4;border-radius:2px;padding:7px 13px;color:#5a5448;">Brand Storytelling</span>
+      <span style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;border:1px solid #d5cfc4;border-radius:2px;padding:7px 13px;color:#5a5448;">Creative Strategy</span>
+      <span style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;border:1px solid #d5cfc4;border-radius:2px;padding:7px 13px;color:#5a5448;">Social Media Management</span>
+      <span style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;border:1px solid #d5cfc4;border-radius:2px;padding:7px 13px;color:#5a5448;">Community Building</span>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px;animation:fadeUp .7s ease .56s both;">
+      <a href="#work" style="font-family:'DM Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;background:#1a1a1a;color:#f5f2ec;text-decoration:none;padding:14px 28px;border-radius:2px;" style-hover="background:#c8471a;">View Work</a>
+      <a href="#contact" style="font-family:'DM Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;background:transparent;color:#1a1a1a;text-decoration:none;padding:14px 28px;border-radius:2px;border:1px solid #1a1a1a;" style-hover="background:#1a1a1a;color:#f5f2ec;">Get In Touch</a>
+    </div>
+  </section>
+
+  <section id="work" style="max-width:1280px;margin:0 auto;padding:clamp(30px,4vh,56px) clamp(20px,4vw,56px) clamp(64px,10vh,120px);">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:clamp(36px,5vh,60px);">
+      <h2 style="font-weight:600;font-size:clamp(1.7rem,3.4vw,2.8rem);line-height:1.05;letter-spacing:-0.025em;margin:0;">Selected work</h2>
+      <p style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8a7d68;margin:0;">Four projects · 2024–26</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:clamp(18px,2vw,30px);">
+
+      <a href="case-study-client.html" style="text-decoration:none;color:inherit;display:block;">
+        <div style="overflow:hidden;border-radius:3px;background:#ede9e0;aspect-ratio:3/4;">
+          <img src="img/kintore-cinematic1.jpg" alt="Client work" style="width:100%;height:100%;object-fit:cover;transition:transform .6s ease;" style-hover="transform:scale(1.04);" />
+        </div>
+        <h3 style="font-weight:500;font-size:1.15rem;letter-spacing:-0.01em;margin:18px 0 0;">Client Work</h3>
+        <p style="font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#8a7d68;margin:7px 0 0;">Content &amp; Production · Bangalore</p>
+      </a>
+
+      <a href="case-study-mip.html" style="text-decoration:none;color:inherit;display:block;">
+        <div style="overflow:hidden;border-radius:3px;background:#ede9e0;aspect-ratio:3/4;">
+          <img src="assets/reel-still.png" alt="Nicola's Chocolate" style="width:100%;height:100%;object-fit:cover;object-position:58% 50%;transition:transform .6s ease;" style-hover="transform:scale(1.04);" />
+        </div>
+        <h3 style="font-weight:500;font-size:1.15rem;letter-spacing:-0.01em;margin:18px 0 0;">Nicola's Chocolate</h3>
+        <p style="font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#8a7d68;margin:7px 0 0;">Integrated Marketing Plan</p>
+      </a>
+
+      <a href="case-study-exeter.html" style="text-decoration:none;color:inherit;display:block;">
+        <div style="overflow:hidden;border-radius:3px;background:#ede9e0;aspect-ratio:3/4;">
+          <img src="https://img.youtube.com/vi/urnuDbEitzA/maxresdefault.jpg" alt="Visit Exeter" style="width:100%;height:100%;object-fit:cover;transition:transform .6s ease;" style-hover="transform:scale(1.04);" />
+        </div>
+        <h3 style="font-weight:500;font-size:1.15rem;letter-spacing:-0.01em;margin:18px 0 0;">Visit Exeter</h3>
+        <p style="font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#8a7d68;margin:7px 0 0;">Promotional Film · Distinction</p>
+      </a>
+
+      <a href="case-study-football.html" style="text-decoration:none;color:inherit;display:block;">
+        <div style="overflow:hidden;border-radius:3px;background:#ede9e0;aspect-ratio:3/4;">
+          <img src="img/fb-group1.jpg" alt="Football community" style="width:100%;height:100%;object-fit:cover;transition:transform .6s ease;" style-hover="transform:scale(1.04);" />
+        </div>
+        <h3 style="font-weight:500;font-size:1.15rem;letter-spacing:-0.01em;margin:18px 0 0;">Football Community</h3>
+        <p style="font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#8a7d68;margin:7px 0 0;">Community Building · Exeter</p>
+      </a>
+
+    </div>
+  </section>
+
+  <section id="contact" style="background:#1a1a1a;color:#f5f2ec;padding:clamp(72px,12vh,150px) clamp(20px,4vw,56px) clamp(48px,7vh,80px);">
+    <div style="max-width:1280px;margin:0 auto;">
+      <p style="font-family:'DM Mono',monospace;font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:#9a9080;margin:0 0 30px;">Get in touch</p>
+      <h2 style="font-weight:600;font-size:clamp(2.4rem,6vw,5.4rem);line-height:1.0;letter-spacing:-0.035em;margin:0;max-width:14ch;">Let's make something worth watching.</h2>
+      <p style="font-size:clamp(1.05rem,1.5vw,1.3rem);color:#9a9080;line-height:1.6;margin:30px 0 0;max-width:520px;">Open to conversations about content, video, and anything that needs to land with intent.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px;">
+        <a href="mailto:karanmd8828@gmail.com" style="font-family:'DM Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;background:#f5f2ec;color:#1a1a1a;text-decoration:none;padding:15px 28px;border-radius:2px;" style-hover="background:#c8471a;color:#f5f2ec;">karanmd8828@gmail.com</a>
+        <a href="https://www.linkedin.com/in/karanmelurdinesh/" target="_blank" rel="noopener" style="font-family:'DM Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;background:transparent;color:#f5f2ec;text-decoration:none;padding:15px 28px;border-radius:2px;border:1px solid rgba(245,242,236,0.35);" style-hover="border-color:#f5f2ec;">LinkedIn</a>
       </div>
     </div>
-    <a href="#contact">Contact</a>
-  </div>
-  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
-</nav>
+  </section>
 
-<div class="hero-video-section"><div class="hero-video-wrap">
-<video autoplay muted loop playsinline><source src="hero-video.mp4" type="video/mp4"></video>
-</div></div>
-
-<section class="hero"><div class="container">
-  <p class="hero-eyebrow">Content Creation · Video · Strategy</p>
-  <h1 class="h1 hero-heading">Hi, I'm <em>Karan</em>.</h1>
-  <p class="hero-intro">I create content that blends strategic marketing with a filmmaker's eye, designed to hold attention and land with intent.</p>
-  <div class="hero-tags">
-    <span class="skill-tag">Content Creation</span>
-    <span class="skill-tag">DaVinci Resolve</span>
-    <span class="skill-tag">Short-form Video</span>
-    <span class="skill-tag">Brand Storytelling</span>
-    <span class="skill-tag">Creative Strategy</span>
-    <span class="skill-tag">Social Media Management</span>
-    <span class="skill-tag">Community Building</span>
-  </div>
-  <div class="hero-cta">
-    <a href="#work" class="btn-primary">View Work</a>
-    <a href="#contact" class="btn-ghost">Get In Touch</a>
-  </div>
-</div></section>
-
-<section id="work"><div class="container">
-  <p class="label">Selected work</p>
-  <h2 class="h2">Recent <em>projects</em></h2>
-  <div class="work-grid reveal">
-    <a href="case-study-client.html" class="work-card">
-      <div class="work-card-visual"><img src="img/cover-client.jpg" alt="Client work" loading="lazy"></div>
-    </a>
-    <a href="case-study-mip.html" class="work-card">
-      <div class="work-card-visual"><img src="img/cover-mip.jpg" alt="Marketing plans" loading="lazy"></div>
-    </a>
-    <a href="case-study-football.html" class="work-card">
-      <div class="work-card-visual"><img src="img/cover-football.jpg" alt="Football community" loading="lazy"></div>
-    </a>
-    <a href="case-study-exeter.html" class="work-card">
-      <div class="work-card-visual cover-exeter">
-        <p class="cover-kicker">Content Creation · University of Exeter</p>
-        <h3 class="cover-title">Visit Exeter.</h3>
-        <div class="cover-divider"></div>
-        <p class="cover-sub">Promotional video for Visit Exeter.<br>Distinction grade.</p>
+  <footer style="background:#1a1a1a;color:#9a9080;">
+    <div style="max-width:1280px;margin:0 auto;padding:30px clamp(20px,4vw,56px);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;border-top:1px solid rgba(245,242,236,0.12);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">
+      <span>Karan Melur Dinesh</span>
+      <div style="display:flex;gap:24px;">
+        <a href="about.html" style="color:#9a9080;text-decoration:none;" style-hover="color:#f5f2ec;">About</a>
+        <a href="#work" style="color:#9a9080;text-decoration:none;" style-hover="color:#f5f2ec;">Work</a>
+        <a href="mailto:karanmd8828@gmail.com" style="color:#9a9080;text-decoration:none;" style-hover="color:#f5f2ec;">Email</a>
       </div>
-    </a>
-  </div>
-</div></section>
+      <span>© 2026</span>
+    </div>
+  </footer>
 
-<section class="contact" id="contact"><div class="container">
-  <p class="label" style="justify-content:center;">Get in touch</p>
-  <h2 class="h2 reveal" style="margin-bottom:.5rem;">Let's make<br><em>something worth watching.</em></h2>
-  <p class="contact-lead reveal">Open to conversations about content, video, and anything that needs to land with intent.</p>
-  <div class="contact-links reveal">
-    <a href="mailto:karanmd8828@gmail.com" class="btn-primary">karanmd8828@gmail.com</a>
-    <a href="https://www.linkedin.com/in/karanmelurdinesh/" target="_blank" class="btn-ghost">LinkedIn</a>
-      <a href="https://www.tiktok.com/@karanmelurdinesh" target="_blank" class="btn-ghost">TikTok</a>
-  </div>
-</div></section>
-
-<footer><p>Karan Melur Dinesh</p><p>2026</p></footer>
-<script>
-const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>o.observe(el));
-document.querySelector('.nav-toggle')?.addEventListener('click',()=>document.querySelector('nav').classList.toggle('nav-open'));
-document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('nav-open')));
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount(){
+    document.querySelectorAll('video[autoplay]').forEach((v)=>{
+      v.muted = true;
+      v.setAttribute('muted','');
+      const p = v.play();
+      if(p && p.catch) p.catch(()=>{});
+    });
+  }
+}
 </script>
 </body>
 </html>

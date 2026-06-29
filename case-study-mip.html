@@ -1,414 +1,806 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Marketing Plans — Karan Melur Dinesh</title>
-<meta name="description" content="Full marketing plans for Isles of Scilly Travel and Nicola's Chocolate using the SOSTAC framework.">
-<meta property="og:title" content="Marketing Plans — Karan Melur Dinesh">
-<meta property="og:description" content="Full marketing plans for Isles of Scilly Travel and Nicola's Chocolate using the SOSTAC framework.">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>K</text></svg>">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-:root {
-  --ink: #1a1a1a; --ink-soft: #2a2a2a; --paper: #f5f2ec; --cream: #ede9e0;
-  --accent: #c8471a; --accent-soft: #e8a882; --muted: #7a7060; --muted-dark: #5a5448;
-  --border: #d5cfc4; --border-soft: #e5e0d6;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font-family:'Outfit',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.25rem 3rem;background:rgba(245,242,236,0.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav-logo{font-family:'DM Mono',monospace;font-size:.78rem;letter-spacing:.14em;color:var(--muted-dark);text-transform:uppercase;text-decoration:none}
-.nav-links{display:flex;gap:2rem;align-items:baseline}
-.nav-links a{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;font-family:'DM Mono',monospace}
-.nav-links a:hover,.nav-links a.active{color:var(--accent)}
-.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px}
-.nav-toggle span{display:block;width:20px;height:2px;background:var(--ink);margin:4px 0;transition:all .3s}
-.nav-open .nav-toggle span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
-.nav-open .nav-toggle span:nth-child(2){opacity:0}
-.nav-open .nav-toggle span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
-.container{max-width:1200px;margin:0 auto;padding:0 3rem}
-section{padding:5rem 0}
-.label{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;display:flex;align-items:center;gap:1rem}
-.label::after{content:'';flex:1;height:1px;background:var(--border)}
-.h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5.5vw,4.8rem);font-weight:300;line-height:1.05}
-.h1 em{font-style:italic;color:var(--accent)}
-.h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.8vw,2.8rem);font-weight:300;line-height:1.15}
-.h2 em{font-style:italic;color:var(--accent)}
-.h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;line-height:1.3;margin:2rem 0 .8rem}
-.body-text{font-size:.95rem;color:var(--muted-dark);line-height:1.85;margin-bottom:1.2rem}
-.btn-primary{padding:.8rem 1.8rem;background:var(--ink);color:var(--paper);text-decoration:none;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-family:'DM Mono',monospace;transition:background .2s;border-radius:2px;display:inline-block}
-.btn-primary:hover{background:var(--accent)}
-.btn-ghost{padding:.8rem 1.8rem;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-family:'DM Mono',monospace;transition:all .2s;border-radius:2px;display:inline-block;background:transparent}
-.btn-ghost:hover{background:var(--ink);color:var(--paper)}
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-footer{padding:2rem 3rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto}
-footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
-@media(max-width:900px){
-  nav{padding:1rem 1.5rem}
-  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--border);flex-direction:column;padding:1.5rem 2rem;gap:1.2rem}
-  .nav-open .nav-links{display:flex}
-  .nav-toggle{display:block}
-  .container{padding:0 1.5rem}
-  section{padding:3rem 0}
-  footer{flex-direction:column;gap:.5rem;text-align:center}
-}
-
-
-.hero-cs{padding:8rem 0 3rem}
-.hero-cs .h1{margin:1rem 0 1.5rem}
-.hero-cs p{font-size:1.1rem;color:var(--muted-dark);max-width:680px;line-height:1.8}
-.cs-client-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin:2rem 0 4rem}
-.cs-client{background:var(--ink);color:var(--paper);padding:2rem 1.8rem;border-radius:4px}
-.cs-client-label{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:.6rem}
-.cs-client-name{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:400;margin-bottom:.3rem}
-.cs-client-sub{font-size:.85rem;color:#9a9080;line-height:1.7;margin-bottom:1rem}
-.cs-client-tags{display:flex;flex-wrap:wrap;gap:.35rem}
-.cs-mini-tag{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;border:1px solid rgba(255,255,255,.15);border-radius:2px;color:rgba(255,255,255,.6)}
-.metric-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;margin:1.5rem 0}
-.metric{padding:1.2rem 1rem;background:var(--cream);border-radius:4px;text-align:center}
-.metric-num{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--accent);line-height:1}
-.metric-label{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-dark);margin-top:.4rem}
-.insight-soft{background:var(--cream);border-left:3px solid var(--accent);padding:1.3rem 1.5rem;margin:1.5rem 0;border-radius:0 4px 4px 0}
-.insight-soft-label{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:.4rem}
-.insight-soft-text{font-size:.92rem;color:var(--muted-dark);line-height:1.8}
-.insight-soft.teal{border-left-color:#1d9e75}
-.insight-soft.teal .insight-soft-label{color:#1d9e75}
-.obj-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1.5rem 0}
-.obj{padding:.95rem 1.1rem;border:1px solid var(--border);border-radius:4px;background:var(--paper)}
-.obj-type{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-.obj-text{font-size:.88rem;color:var(--muted-dark);line-height:1.6;margin-top:.25rem}
-.creative-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
-.creative{border:1px solid var(--border);border-radius:4px;overflow:hidden;background:var(--paper)}
-.creative-header{padding:2rem 1.3rem;color:white;display:flex;flex-direction:column;justify-content:flex-end;min-height:120px}
-.creative-header.travel{background:linear-gradient(135deg,#0B1D3A,#1E5A7E)}
-.creative-header.choc{background:linear-gradient(135deg,#3D1C0B,#6B3A1F)}
-.creative-top{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:.3rem}
-.creative-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400}
-.creative-body{padding:1.1rem 1.3rem 1.3rem}
-.creative-desc{font-size:.82rem;color:var(--muted-dark);line-height:1.65;margin-bottom:.7rem}
-.creative-tags{display:flex;flex-wrap:wrap;gap:.3rem}
-.creative-tag{font-family:'DM Mono',monospace;font-size:.55rem;color:var(--muted);background:var(--cream);padding:.2rem .55rem;border-radius:2px}
-.phase-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.5rem 0}
-.phase{border-left:3px solid var(--accent);padding:.3rem 0 .3rem 1.2rem}
-.phase.coral{border-left-color:#c8471a}
-.phase.teal{border-left-color:#1d9e75}
-.phase-label{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
-.phase.teal .phase-label{color:#1d9e75}
-.phase-title{font-size:.95rem;font-weight:500;color:var(--ink);margin:.25rem 0 .5rem}
-.phase-item{font-size:.83rem;color:var(--muted-dark);line-height:1.65;padding-left:.9rem;position:relative;margin-bottom:.2rem}
-.phase-item::before{content:'—';position:absolute;left:0;color:var(--border)}
-.divider{border:none;border-top:1px solid var(--border);margin:4rem 0}
-.compare-table{width:100%;border-collapse:collapse;margin:1.5rem 0;border:1px solid var(--border);border-radius:4px;overflow:hidden;background:var(--paper)}
-.compare-table th{background:var(--cream);font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;padding:.8rem 1rem;text-align:left;border-bottom:1px solid var(--border);font-weight:500}
-.compare-table td{padding:.7rem 1rem;font-size:.85rem;color:var(--muted-dark);border-bottom:1px solid var(--border);line-height:1.6;vertical-align:top}
-.compare-table td:first-child{font-weight:500;color:var(--ink);width:160px}
-.compare-table tr:nth-child(even){background:rgba(0,0,0,.015)}
-.compare-table tr:last-child td{border-bottom:none}
-.takeaway-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
-.takeaway{padding:1.4rem 1.3rem;border:1px solid var(--border);border-radius:4px;background:var(--paper)}
-.takeaway-title{font-size:.95rem;font-weight:500;color:var(--ink);margin-bottom:.5rem}
-.takeaway-text{font-size:.85rem;color:var(--muted-dark);line-height:1.7}
-.exec-block{background:var(--cream);border-radius:4px;padding:2rem 2.2rem;margin:2rem 0}
-.exec-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:1.2rem}
-.exec-label{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.5rem}
-.exec-label.teal{color:#1d9e75}
-.exec-label.coral{color:#c8471a}
-.exec-text{font-size:.88rem;color:var(--muted-dark);line-height:1.8}
-.feedback-block{background:var(--ink);color:var(--paper);padding:2.8rem;margin:2.5rem 0;border-radius:4px;position:relative}
-.feedback-quote{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;line-height:1.6;color:var(--paper);font-style:italic;margin-bottom:1.5rem}
-.feedback-attr{font-family:'DM Mono',monospace;font-size:.7rem;color:var(--accent);letter-spacing:.1em}
-.feedback-attr span{display:block;color:#9a9080;font-size:.65rem;margin-top:.2rem;letter-spacing:.05em}
-@media(max-width:900px){
-  .cs-client-grid,.metric-row,.creative-grid,.phase-grid,.obj-grid,.takeaway-grid,.exec-grid{grid-template-columns:1fr}
-  .metric-row{grid-template-columns:1fr 1fr}
-  .creative-grid{grid-template-columns:1fr}
-}
-
-
-.nav-dropdown{position:relative;display:flex;align-items:center}
-.nav-dropdown>a{cursor:pointer}
-.nav-dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.6rem 0;margin-top:.8rem;min-width:160px;box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:200}
-.nav-dropdown-menu a{display:block;padding:.4rem 1.2rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);font-family:'DM Mono',monospace;text-decoration:none;transition:color .2s;white-space:nowrap}
-.nav-dropdown-menu a:hover{color:var(--accent)}
-.nav-dropdown:hover .nav-dropdown-menu{display:block}
-@media(max-width:900px){
-  .nav-dropdown-menu{position:static;transform:none;box-shadow:none;border:none;padding:0 0 0 1rem;margin:0;display:block;background:transparent}
-  .nav-dropdown-menu a{padding:.3rem 0}
-}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
 </head>
 <body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-.dropdown{position:relative}
-.dropdown-toggle{cursor:pointer}
-.dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.8rem 0;min-width:200px;box-shadow:0 4px 12px rgba(0,0,0,.08);z-index:200}
-.dropdown:hover .dropdown-menu{display:block}
-.dropdown-menu a{display:block;padding:.4rem 1.2rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-family:'DM Mono',monospace;transition:color .2s}
-.dropdown-menu a:hover,.dropdown-menu a.active{color:var(--accent)}
-@media(max-width:900px){
-  .dropdown-menu{position:static;display:none;border:none;box-shadow:none;padding:.3rem 0 .3rem 1rem}
-  .nav-open .dropdown .dropdown-menu{display:block}
-}
+  html,body{margin:0;padding:0;background:#1E1008;}
+  image-slot{display:block;}
+  @keyframes mcFrame{0%{opacity:0}3%{opacity:1}28%{opacity:1}31%{opacity:0}100%{opacity:0}}
+  @keyframes mcPipOn{0%{opacity:.3}3%{opacity:1}28%{opacity:1}31%{opacity:.3}100%{opacity:.3}}
+</style>
+<script src="image-slot.js"></script>
+</helmet>
+<template id="__bundler_thumbnail">
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#1E1008"/>
+  <rect x="78" y="62" width="44" height="56" rx="4" fill="#B5471B"/>
+  <line x1="100" y1="62" x2="100" y2="118" stroke="#1E1008" stroke-width="2"/>
+  <line x1="78" y1="90" x2="122" y2="90" stroke="#1E1008" stroke-width="2"/>
+  <text x="100" y="150" fill="#F2EBD9" font-family="Georgia, serif" font-size="26" font-style="italic" text-anchor="middle">Melt</text>
+</svg>
+</template>
+<div id="scrolldeck" style="background:#1E1008;width:100%;overflow-x:hidden;">
 
-.nav-dropdown{position:relative;display:flex;align-items:center}
-.nav-dropdown>a{cursor:pointer}
-.nav-dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.6rem 0;margin-top:.8rem;min-width:160px;box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:200}
-.nav-dropdown-menu a{display:block;padding:.4rem 1.2rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);font-family:'DM Mono',monospace;text-decoration:none;transition:color .2s;white-space:nowrap}
-.nav-dropdown-menu a:hover{color:var(--accent)}
-.nav-dropdown:hover .nav-dropdown-menu{display:block}
-@media(max-width:900px){
-  .nav-dropdown-menu{position:static;transform:none;box-shadow:none;border:none;padding:0 0 0 1rem;margin:0;display:block;background:transparent}
-  .nav-dropdown-menu a{padding:.3rem 0}
-}
-</style><nav>
-  <a href="index.html" class="nav-logo">KMD</a>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <div class="nav-dropdown">
-      <a href="index.html#work" class="active">Projects</a>
-      <div class="nav-dropdown-menu">
-        <a href="case-study-client.html">Client work</a>
-        <a href="case-study-mip.html">Marketing plans</a>
-        <a href="case-study-exeter.html">Visit Exeter</a>
-        <a href="case-study-football.html">Community</a>
+<section data-label="Cover" data-screen-label="01" data-speaker-notes="Open slow and warm. The campaign name is the design. A one-year integrated marketing plan for Nicola's Chocolate, structured on SOSTAC." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;">
+  <div style="flex:1;padding:118px 104px;display:flex;flex-direction:column;justify-content:center;">
+    <div style="font-size:25px;letter-spacing:0.32em;text-transform:uppercase;font-weight:600;color:#B5471B;margin-bottom:40px;">Integrated Marketing Plan · 2025–26</div>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:184px;line-height:0.85;margin:0;letter-spacing:-0.02em;">Let It<br>Melt You</h1>
+    <div style="width:280px;height:1px;background:#B5471B;margin:46px 0 28px;"></div>
+    <div style="font-size:27px;letter-spacing:0.28em;text-transform:uppercase;">Nicola's Chocolate — A SOSTAC Case Study</div>
+    <div style="margin-top:auto;font-size:24px;letter-spacing:0.26em;text-transform:uppercase;color:rgba(30,16,8,0.5);">Exeter · Est. 2021</div>
+  </div>
+  <img src="assets/reel-still.png" alt="Savouring a piece of Nicola's chocolate" style="width:43%;height:100%;flex:none;object-fit:cover;object-position:58% 50%;" />
+</section>
+
+<section data-label="At a Glance" data-screen-label="02" data-speaker-notes="A fast orientation before the depth. Who the brand is, the problem, the idea, and the prize — so the reader has the whole picture up front." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;padding:90px 110px;gap:90px;">
+  <div style="width:42%;flex:none;display:flex;flex-direction:column;justify-content:center;">
+    <div style="font-size:25px;letter-spacing:0.26em;text-transform:uppercase;font-weight:600;color:#B5471B;">The Brief at a Glance</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:74px;line-height:1.02;margin:26px 0 30px;letter-spacing:-0.01em;">Turning a beloved local maker into a national, emotionally premium brand.</h2>
+    <p style="font-size:29px;line-height:1.5;color:rgba(30,16,8,0.7);margin:0;font-weight:400;">A one-year digital campaign that repositions chocolate from a product into a ritual — built on founder-led storytelling and delivered on a lean budget.</p>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:0;">
+    <div style="border-top:1px solid rgba(30,16,8,0.22);border-right:1px solid rgba(30,16,8,0.14);padding:34px 40px 34px 0;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;color:#B5471B;font-weight:600;margin-bottom:14px;">The Brand</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:40px;line-height:1.08;">Bean-to-bar, single-origin micro-maker in Exeter.</div>
+    </div>
+    <div style="border-top:1px solid rgba(30,16,8,0.22);padding:34px 0 34px 40px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;color:#B5471B;font-weight:600;margin-bottom:14px;">The Challenge</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:40px;line-height:1.08;">Grow revenue from £25K to £100K on a £20K budget.</div>
+    </div>
+    <div style="border-top:1px solid rgba(30,16,8,0.14);border-right:1px solid rgba(30,16,8,0.14);padding:34px 40px 0 0;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;color:#B5471B;font-weight:600;margin-bottom:14px;">The Big Idea</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:40px;line-height:1.08;">"Let It Melt You" — chocolate as a moment to pause.</div>
+    </div>
+    <div style="border-top:1px solid rgba(30,16,8,0.14);padding:34px 0 0 40px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;color:#B5471B;font-weight:600;margin-bottom:14px;">The Engine</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:40px;line-height:1.08;">A Hero · Hub · Help content ecosystem.</div>
+    </div>
+  </div>
+</section>
+
+<section data-label="The Approach" data-screen-label="03" data-speaker-notes="The plan is structured on the SOSTAC framework — Situation, Objectives, Strategy, Tactics, Action, Control. This slide is the spine of the whole case study." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:84px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.26em;text-transform:uppercase;font-weight:600;color:#B5471B;">The Approach</div>
+    <div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(30,16,8,0.45);">Framework — PR Smith's SOSTAC®</div>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:62px;line-height:1.02;margin:22px 0 0;letter-spacing:-0.01em;">Six questions, one coherent plan.</h2>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;margin-top:14px;">
+    <div style="display:flex;align-items:center;gap:46px;border-top:1px solid rgba(30,16,8,0.18);padding:21px 0;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:58px;color:#B5471B;width:64px;flex:none;">S</div>
+      <div style="width:300px;flex:none;font-family:'Cormorant Garamond',serif;font-size:38px;">Situation</div>
+      <div style="font-size:27px;color:rgba(30,16,8,0.66);">Where are we now? — market, competitors, SWOT.</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:46px;border-top:1px solid rgba(30,16,8,0.18);padding:21px 0;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:58px;color:#B5471B;width:64px;flex:none;">O</div>
+      <div style="width:300px;flex:none;font-family:'Cormorant Garamond',serif;font-size:38px;">Objectives</div>
+      <div style="font-size:27px;color:rgba(30,16,8,0.66);">Where do we want to be? — social, marketing, financial.</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:46px;border-top:1px solid rgba(30,16,8,0.18);padding:21px 0;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:58px;color:#B5471B;width:64px;flex:none;">S</div>
+      <div style="width:300px;flex:none;font-family:'Cormorant Garamond',serif;font-size:38px;">Strategy</div>
+      <div style="font-size:27px;color:rgba(30,16,8,0.66);">How do we get there? — Ansoff, STP, positioning, the idea.</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:46px;border-top:1px solid rgba(30,16,8,0.18);padding:21px 0;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:58px;color:#B5471B;width:64px;flex:none;">T</div>
+      <div style="width:300px;flex:none;font-family:'Cormorant Garamond',serif;font-size:38px;">Tactics</div>
+      <div style="font-size:27px;color:rgba(30,16,8,0.66);">The detail — Hero · Hub · Help and the creative mix.</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:46px;border-top:1px solid rgba(30,16,8,0.18);padding:21px 0;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:58px;color:#B5471B;width:64px;flex:none;">A</div>
+      <div style="width:300px;flex:none;font-family:'Cormorant Garamond',serif;font-size:38px;">Action</div>
+      <div style="font-size:27px;color:rgba(30,16,8,0.66);">Who does what, when — roadmap and £20K budget.</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:46px;border-top:1px solid rgba(30,16,8,0.18);border-bottom:1px solid rgba(30,16,8,0.18);padding:21px 0;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:58px;color:#B5471B;width:64px;flex:none;">C</div>
+      <div style="width:300px;flex:none;font-family:'Cormorant Garamond',serif;font-size:38px;">Control</div>
+      <div style="font-size:27px;color:rgba(30,16,8,0.66);">How do we measure? — KPIs, ROI, contingency.</div>
+    </div>
+  </div>
+</section>
+
+<section data-label="S · Situation" data-screen-label="04" data-speaker-notes="Chapter one of SOSTAC — Situation. Where are we now?" style="box-sizing:border-box;background:#8C3515;color:#F2EBD9;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px;">
+  <div style="position:absolute;left:90px;top:84px;font-size:24px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,235,217,0.7);">Phase 01 / 06</div>
+  <div style="display:flex;gap:30px;margin-bottom:44px;">
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:#F2EBD9;">S</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">O</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">S</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">T</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">A</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">C</span>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:148px;line-height:0.92;margin:0;letter-spacing:-0.01em;">Situation</h2>
+  <div style="font-size:26px;letter-spacing:0.06em;color:rgba(242,235,217,0.78);margin-top:30px;font-weight:400;">Where are we now?</div>
+</section>
+
+<section data-label="Brand Context" data-screen-label="05" data-speaker-notes="Who Nicola's is, and the problem. A genuinely exceptional bean-to-bar maker whose awareness hasn't caught up to the product." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;">
+  <img src="assets/ctx-photo.png" alt="Founder holding cacao beans" style="width:42%;height:100%;flex:none;object-fit:cover;object-position:center;display:block;align-self:stretch;" />
+  <div style="flex:1;padding:90px 100px;display:flex;flex-direction:column;justify-content:center;">
+    <div style="font-size:24px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;margin-bottom:26px;">Situation / The Maker</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:68px;line-height:1.03;margin:0 0 48px;letter-spacing:-0.01em;">A craft chocolate maker ready to be more than a local secret.</h2>
+    <div style="border-top:1px solid #B5471B;padding:24px 0;font-size:29px;letter-spacing:0.01em;color:rgba(30,16,8,0.82);">Founded in Exeter, 2021. Bean-to-bar, single-origin, award-winning.</div>
+    <div style="border-top:1px solid #B5471B;padding:24px 0;font-size:29px;letter-spacing:0.01em;color:rgba(30,16,8,0.82);">Devon inclusions — sea salt, Exmoor tea, local rum &amp; chai.</div>
+    <div style="border-top:1px solid #B5471B;padding:24px 0;font-size:29px;letter-spacing:0.01em;color:rgba(30,16,8,0.82);">Founder-led, DTC, ~£4.45 gross margin per bar — but low awareness beyond the Southwest.</div>
+    <div style="border-top:1px solid #B5471B;border-bottom:1px solid #B5471B;padding:24px 0;font-size:29px;letter-spacing:0.01em;color:rgba(30,16,8,0.82);">The challenge: premium emotional positioning in a crowded £16.18B market.</div>
+  </div>
+</section>
+
+<section data-label="The Market" data-screen-label="06" data-speaker-notes="Three numbers carry the category case: a large and premiumising market, a young values-led buyer, and a retail landscape wide open for artisan and DTC brands." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:90px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Situation / Market Analysis</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">CAGR 3.8% · 2024–2030</div>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);margin-top:24px;">
+    <div style="padding:30px 56px 30px 0;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:120px;line-height:0.9;letter-spacing:-0.02em;">£16.18B</div>
+      <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;margin:26px 0 16px;line-height:1.3;">UK Confectionery<br>Market, 2024</div>
+      <p style="font-size:27px;line-height:1.45;color:rgba(30,16,8,0.62);margin:0;">Projected to reach £22.06B by 2030, driven by premiumisation.</p>
+    </div>
+    <div style="padding:30px 56px;border-left:1px solid #B5471B;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:120px;line-height:0.9;letter-spacing:-0.02em;">79%</div>
+      <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;margin:26px 0 16px;line-height:1.3;">Of 25–34s Buy<br>Premium Chocolate</div>
+      <p style="font-size:27px;line-height:1.45;color:rgba(30,16,8,0.62);margin:0;">Versus only 37% of over-65s — our audience is young and values-led.</p>
+    </div>
+    <div style="padding:30px 0 30px 56px;border-left:1px solid #B5471B;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:120px;line-height:0.9;letter-spacing:-0.02em;">72%</div>
+      <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;margin:26px 0 16px;line-height:1.3;">Retail Dominated<br>By Supermarkets</div>
+      <p style="font-size:27px;line-height:1.45;color:rgba(30,16,8,0.62);margin:0;">The gap for artisan, DTC and experience-led brands is wide open.</p>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(30,16,8,0.2);padding-top:26px;font-size:26px;letter-spacing:0.04em;color:rgba(30,16,8,0.66);">68% of UK consumers now prefer thoughtful, meaningful gifts — and post-pandemic gifting culture rewards story over price.</div>
+</section>
+
+<section data-label="Macro &amp; Micro" data-screen-label="07" data-speaker-notes="The forces around the brand. PESTLE shows a tough but opportunity-rich macro picture; Porter's shows a high-rivalry, low-barrier market where founder story is the moat." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:84px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Situation / External Forces</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">Framework — PESTLE × Porter's Five Forces</div>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:80px;margin-top:30px;align-items:center;">
+    <div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:42px;margin:0 0 18px;">Macro — PESTLE</h3>
+      <div style="display:flex;flex-direction:column;">
+        <div style="display:flex;gap:20px;border-top:1px solid rgba(30,16,8,0.16);padding:14px 0;"><div style="width:240px;flex:none;font-size:24px;letter-spacing:0.01em;text-transform:uppercase;font-weight:600;">Political</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);line-height:1.3;">HFSS rules &amp; Fairtrade compliance</div><div style="width:90px;flex:none;text-align:right;font-size:24px;font-weight:600;color:#8C3515;">−1.5</div></div>
+        <div style="display:flex;gap:20px;border-top:1px solid rgba(30,16,8,0.16);padding:14px 0;"><div style="width:240px;flex:none;font-size:24px;letter-spacing:0.01em;text-transform:uppercase;font-weight:600;">Economic</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);line-height:1.3;">Premium up 18%, but cost-of-living squeeze</div><div style="width:90px;flex:none;text-align:right;font-size:24px;font-weight:600;color:#8C3515;">−2.0</div></div>
+        <div style="display:flex;gap:20px;border-top:1px solid rgba(30,16,8,0.16);padding:14px 0;"><div style="width:240px;flex:none;font-size:24px;letter-spacing:0.01em;text-transform:uppercase;font-weight:600;">Social</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);line-height:1.3;">Gifting &amp; sustainability culture rising</div><div style="width:90px;flex:none;text-align:right;font-size:24px;font-weight:600;color:#1E1008;">+1.5</div></div>
+        <div style="display:flex;gap:20px;border-top:1px solid rgba(30,16,8,0.16);padding:14px 0;"><div style="width:240px;flex:none;font-size:24px;letter-spacing:0.01em;text-transform:uppercase;font-weight:600;">Technological</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);line-height:1.3;">Shopify, Meta, Mailchimp level the field</div><div style="width:90px;flex:none;text-align:right;font-size:24px;font-weight:600;color:#1E1008;">+2.0</div></div>
+        <div style="display:flex;gap:20px;border-top:1px solid rgba(30,16,8,0.16);padding:14px 0;"><div style="width:240px;flex:none;font-size:24px;letter-spacing:0.01em;text-transform:uppercase;font-weight:600;">Legal</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);line-height:1.3;">Allergen labelling &amp; GDPR for CRM</div><div style="width:90px;flex:none;text-align:right;font-size:24px;font-weight:600;color:#8C3515;">−1.5</div></div>
+        <div style="display:flex;gap:20px;border-top:1px solid rgba(30,16,8,0.16);border-bottom:1px solid rgba(30,16,8,0.16);padding:14px 0;"><div style="width:240px;flex:none;font-size:24px;letter-spacing:0.01em;text-transform:uppercase;font-weight:600;">Environmental</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);line-height:1.3;">Ethical sourcing is now table stakes</div><div style="width:90px;flex:none;text-align:right;font-size:24px;font-weight:600;color:#1E1008;">+2.0</div></div>
+      </div>
+      <p style="font-size:26px;line-height:1.4;color:rgba(30,16,8,0.7);margin:28px 0 0;border-left:3px solid #B5471B;padding-left:24px;">Macro net: technology, social shift and ethical demand outweigh the regulatory and cost-of-living headwinds.</p>
+    </div>
+    <div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:42px;margin:0 0 18px;">Micro — Porter's Five Forces</h3>
+      <div style="display:flex;flex-direction:column;">
+        <div style="display:flex;gap:20px;border-top:1px solid rgba(30,16,8,0.16);padding:14px 0;"><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.78);line-height:1.3;">Competitive rivalry</div><div style="width:120px;flex:none;text-align:right;font-size:24px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;color:#8C3515;">High</div></div>
+        <div style="display:flex;gap:20px;border-top:1px solid rgba(30,16,8,0.16);padding:14px 0;"><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.78);line-height:1.3;">Threat of new entry</div><div style="width:120px;flex:none;text-align:right;font-size:24px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;color:#8C3515;">High</div></div>
+        <div style="display:flex;gap:20px;border-top:1px solid rgba(30,16,8,0.16);padding:14px 0;"><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.78);line-height:1.3;">Bargaining power of buyers</div><div style="width:120px;flex:none;text-align:right;font-size:24px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;color:#8C3515;">High</div></div>
+        <div style="display:flex;gap:20px;border-top:1px solid rgba(30,16,8,0.16);padding:14px 0;"><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.78);line-height:1.3;">Threat of substitutes</div><div style="width:120px;flex:none;text-align:right;font-size:24px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;color:#8C3515;">High</div></div>
+        <div style="display:flex;gap:20px;border-top:1px solid rgba(30,16,8,0.16);border-bottom:1px solid rgba(30,16,8,0.16);padding:14px 0;"><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.78);line-height:1.3;">Bargaining power of suppliers</div><div style="width:120px;flex:none;text-align:right;font-size:24px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;color:#B5471B;">Moderate</div></div>
+      </div>
+      <p style="font-size:26px;line-height:1.4;color:rgba(30,16,8,0.7);margin:30px 0 0;border-left:3px solid #B5471B;padding-left:24px;">Low barriers and high rivalry mean the moat isn't the product — it's the <strong style="font-weight:600;">founder story and emotional brand</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<section data-label="Competitors" data-screen-label="08" data-speaker-notes="Six direct competitors, all anchored on provenance, sustainability and plastic-free packaging at £5.50–£8.95 a bar. Nicola's shares those values but differentiates on deep local roots, limited-edition inclusions and an authentic founder story." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:80px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Situation / Competitor Analysis</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">UK Premium &amp; Artisan Chocolate</div>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:54px;line-height:1.0;margin:18px 0 6px;letter-spacing:-0.01em;">Everyone sells provenance. No one owns the feeling.</h2>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;">
+    <div style="display:flex;gap:30px;padding:10px 0;font-size:21px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);font-weight:600;"><div style="width:230px;flex:none;">Brand</div><div style="width:200px;flex:none;">Price</div><div style="flex:1;">Positioning / USP</div></div>
+    <div style="display:flex;gap:30px;border-top:1px solid rgba(30,16,8,0.18);padding:15px 0;align-items:baseline;"><div style="width:230px;flex:none;font-family:'Cormorant Garamond',serif;font-size:34px;">Chocolarder</div><div style="width:200px;flex:none;font-size:25px;color:rgba(30,16,8,0.7);">£3–£7.50</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);line-height:1.3;">Plastic-free; cacao shipped by sail to cut carbon.</div></div>
+    <div style="display:flex;gap:30px;border-top:1px solid rgba(30,16,8,0.18);padding:15px 0;align-items:baseline;"><div style="width:230px;flex:none;font-family:'Cormorant Garamond',serif;font-size:34px;">Bare Bones</div><div style="width:200px;flex:none;font-size:25px;color:rgba(30,16,8,0.7);">£3–£7.50</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);line-height:1.3;">Purity — no additives or emulsifiers, radical transparency.</div></div>
+    <div style="display:flex;gap:30px;border-top:1px solid rgba(30,16,8,0.18);padding:15px 0;align-items:baseline;"><div style="width:230px;flex:none;font-family:'Cormorant Garamond',serif;font-size:34px;">Barbers</div><div style="width:200px;flex:none;font-size:25px;color:rgba(30,16,8,0.7);">£5.95</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);line-height:1.3;">100% recyclable, biodegradable packaging.</div></div>
+    <div style="display:flex;gap:30px;border-top:1px solid rgba(30,16,8,0.18);padding:15px 0;align-items:baseline;"><div style="width:230px;flex:none;font-family:'Cormorant Garamond',serif;font-size:34px;">Hotel Chocolat</div><div style="width:200px;flex:none;font-size:25px;color:rgba(30,16,8,0.7);">£5.45</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);line-height:1.3;">Scale — own plantations, 120+ outlets, the Velvetiser.</div></div>
+    <div style="display:flex;gap:30px;border-top:1px solid rgba(30,16,8,0.18);padding:15px 0;align-items:baseline;"><div style="width:230px;flex:none;font-family:'Cormorant Garamond',serif;font-size:34px;">Chococo</div><div style="width:200px;flex:none;font-size:25px;color:rgba(30,16,8,0.7);">£5.50</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);line-height:1.3;">130+ fine-food awards, 100% plastic-free.</div></div>
+    <div style="display:flex;gap:30px;border-top:1px solid rgba(30,16,8,0.18);padding:15px 0;align-items:baseline;"><div style="width:230px;flex:none;font-family:'Cormorant Garamond',serif;font-size:34px;">Pump Street</div><div style="width:200px;flex:none;font-size:25px;color:rgba(30,16,8,0.7);">£3–£8.95</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);line-height:1.3;">Bakery-inspired bars, direct-trade traceability.</div></div>
+    <div style="display:flex;gap:30px;border-top:2px solid #B5471B;border-bottom:2px solid #B5471B;background:rgba(181,71,27,0.07);padding:18px 14px;align-items:baseline;margin-top:4px;"><div style="width:230px;flex:none;font-family:'Cormorant Garamond',serif;font-size:36px;color:#8C3515;font-weight:600;padding-left:6px;">Nicola's</div><div style="width:200px;flex:none;font-size:25px;color:#8C3515;font-weight:600;">£5.65</div><div style="flex:1;font-size:25px;color:#8C3515;line-height:1.3;font-weight:500;">Deep Devon roots, limited-edition inclusions &amp; founder-led emotional storytelling — craft <em>and</em> feeling.</div></div>
+  </div>
+</section>
+
+<section data-label="Perceptual Map" data-screen-label="09" data-speaker-notes="Plot the set on functional-versus-emotional and mass versus artisanal, and the top-right — artisanal and emotional — is open. That's where Nicola's plays: the premium emotional experience." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:80px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Situation / The White Space</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">Perceptual Map</div>
+  </div>
+  <div style="display:grid;grid-template-columns:0.82fr 1.18fr;gap:70px;align-items:center;flex:1;margin-top:10px;">
+    <div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:62px;line-height:1.02;margin:0 0 28px;letter-spacing:-0.01em;">Owning the premium emotional experience.</h2>
+      <p style="font-size:28px;line-height:1.5;color:rgba(30,16,8,0.7);margin:0;">Rivals anchor on purity, provenance and price. The unclaimed space pairs artisan quality with emotion — self-care, gifting and ritual. That is where Nicola's lives.</p>
+    </div>
+    <div style="position:relative;width:100%;height:580px;border-left:1.5px solid rgba(30,16,8,0.4);border-bottom:1.5px solid rgba(30,16,8,0.4);">
+      <div style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:rgba(30,16,8,0.12);"></div>
+      <div style="position:absolute;top:50%;left:0;right:0;height:1px;background:rgba(30,16,8,0.12);"></div>
+      <div style="position:absolute;top:-42px;left:50%;transform:translateX(-50%);font-size:24px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(30,16,8,0.55);">Emotional · Experience</div>
+      <div style="position:absolute;bottom:-42px;left:50%;transform:translateX(-50%);font-size:24px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(30,16,8,0.55);">Functional · Taste</div>
+      <div style="position:absolute;left:-14px;bottom:-42px;font-size:24px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(30,16,8,0.55);">Mass</div>
+      <div style="position:absolute;right:-8px;bottom:-42px;font-size:24px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(30,16,8,0.55);">Artisanal</div>
+      <div style="position:absolute;left:84%;top:11%;transform:translate(-50%,-50%);width:24px;height:24px;border-radius:50%;background:#8C3515;box-shadow:0 0 0 8px rgba(181,71,27,0.22);"></div>
+      <div style="position:absolute;left:calc(84% + 22px);top:11%;transform:translateY(-50%);font-family:'Cormorant Garamond',serif;font-weight:600;font-size:34px;color:#8C3515;white-space:nowrap;">Nicola's</div>
+      <div style="position:absolute;left:74%;top:32%;transform:translate(-50%,-50%);width:13px;height:13px;border-radius:50%;background:rgba(30,16,8,0.42);"></div>
+      <div style="position:absolute;left:calc(74% + 15px);top:32%;transform:translateY(-50%);font-size:24px;color:rgba(30,16,8,0.6);white-space:nowrap;">Chococo</div>
+      <div style="position:absolute;left:56%;top:50%;transform:translate(-50%,-50%);width:13px;height:13px;border-radius:50%;background:rgba(30,16,8,0.42);"></div>
+      <div style="position:absolute;left:calc(56% + 15px);top:50%;transform:translateY(-50%);font-size:24px;color:rgba(30,16,8,0.6);white-space:nowrap;">Hotel Chocolat</div>
+      <div style="position:absolute;left:88%;top:46%;transform:translate(-50%,-50%);width:13px;height:13px;border-radius:50%;background:rgba(30,16,8,0.42);"></div>
+      <div style="position:absolute;left:88%;top:calc(46% + 16px);transform:translateX(-50%);font-size:24px;color:rgba(30,16,8,0.6);white-space:nowrap;">Chocolarder</div>
+      <div style="position:absolute;left:72%;top:66%;transform:translate(-50%,-50%);width:13px;height:13px;border-radius:50%;background:rgba(30,16,8,0.42);"></div>
+      <div style="position:absolute;left:calc(72% + 15px);top:66%;transform:translateY(-50%);font-size:24px;color:rgba(30,16,8,0.6);white-space:nowrap;">Pump Street</div>
+      <div style="position:absolute;left:84%;top:80%;transform:translate(-50%,-50%);width:13px;height:13px;border-radius:50%;background:rgba(30,16,8,0.42);"></div>
+      <div style="position:absolute;left:84%;top:calc(80% + 16px);transform:translateX(-50%);font-size:24px;color:rgba(30,16,8,0.6);white-space:nowrap;">Bare Bones · Barbers</div>
+    </div>
+  </div>
+</section>
+
+<section data-label="SWOT" data-screen-label="10" data-speaker-notes="The internal-external read. Real strengths in craft and story, real constraints in budget and scale; the opportunity is premium emotional experience, the threats are rivalry and supply volatility. TOWS points straight at story-led penetration." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:80px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Situation / SWOT → TOWS</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">Internal capability × External environment</div>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:0;margin-top:24px;">
+    <div style="border-top:2px solid #1E1008;border-right:1px solid rgba(30,16,8,0.16);padding:28px 50px 28px 0;">
+      <div style="font-size:24px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;margin-bottom:18px;">Strengths</div>
+      <div style="display:flex;flex-direction:column;gap:13px;font-size:25px;line-height:1.32;color:rgba(30,16,8,0.72);"><div>Artisan, handmade craft in micro-batches</div><div>Ethical, single-origin cacao sourcing</div><div>Strong Devon identity &amp; local collaborations</div><div>Experiential tastings &amp; workshops</div><div>Authentic, founder-led brand story</div></div>
+    </div>
+    <div style="border-top:2px solid #1E1008;padding:28px 0 28px 50px;">
+      <div style="font-size:24px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;margin-bottom:18px;">Weaknesses</div>
+      <div style="display:flex;flex-direction:column;gap:13px;font-size:25px;line-height:1.32;color:rgba(30,16,8,0.72);"><div>Limited budget &amp; small team</div><div>Low awareness beyond Devon</div><div>Narrow distribution &amp; retail reach</div><div>Small-scale production capacity</div><div>Limited digital &amp; CRM infrastructure</div></div>
+    </div>
+    <div style="border-top:1px solid rgba(30,16,8,0.16);border-right:1px solid rgba(30,16,8,0.16);padding:28px 50px 0 0;">
+      <div style="font-size:24px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#B5471B;margin-bottom:18px;">Opportunities</div>
+      <div style="display:flex;flex-direction:column;gap:13px;font-size:25px;line-height:1.32;color:rgba(30,16,8,0.72);"><div>Premium seasonal &amp; gifting experiences</div><div>Online &amp; subscription growth</div><div>Flavour &amp; format innovation</div><div>Sustainability-led consumer trust</div><div>Partnerships &amp; corporate gifting</div></div>
+    </div>
+    <div style="border-top:1px solid rgba(30,16,8,0.16);padding:28px 0 0 50px;">
+      <div style="font-size:24px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#B5471B;margin-bottom:18px;">Threats</div>
+      <div style="display:flex;flex-direction:column;gap:13px;font-size:25px;line-height:1.32;color:rgba(30,16,8,0.72);"><div>Intense artisan &amp; premium rivalry</div><div>Post-Brexit cocoa supply volatility</div><div>Price-sensitive customer switching</div><div>Substitute gifts &amp; snacks</div><div>Cost-of-living pressure on spend</div></div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(30,16,8,0.2);padding-top:24px;margin-top:6px;font-size:26px;color:rgba(30,16,8,0.72);"><span style="color:#B5471B;font-weight:600;letter-spacing:0.04em;">TOWS →</span> Use story &amp; craft (S) to seize the premium-experience gap (O), offsetting low awareness (W) and rivalry (T).</div>
+</section>
+
+<section data-label="O · Objectives" data-screen-label="11" data-speaker-notes="Chapter two — Objectives. Where do we want to be?" style="box-sizing:border-box;background:#8C3515;color:#F2EBD9;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px;">
+  <div style="position:absolute;left:90px;top:84px;font-size:24px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,235,217,0.7);">Phase 02 / 06</div>
+  <div style="display:flex;gap:30px;margin-bottom:44px;">
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">S</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:#F2EBD9;">O</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">S</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">T</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">A</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">C</span>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:148px;line-height:0.92;margin:0;letter-spacing:-0.01em;">Objectives</h2>
+  <div style="font-size:26px;letter-spacing:0.06em;color:rgba(242,235,217,0.78);margin-top:30px;">Where do we want to be?</div>
+</section>
+
+<section data-label="The Targets" data-screen-label="12" data-speaker-notes="SMART objectives in three buckets. Social builds the audience, marketing builds the funnel, financial delivers the £100K. Every one is measurable and time-bound to August 2026." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:84px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Objectives / SMART Targets</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">By August 2026</div>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:58px;line-height:1.0;margin:18px 0 0;letter-spacing:-0.01em;">Three lenses — social, marketing, financial.</h2>
+  <div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;">
+    <div style="padding:0 54px 0 0;border-right:1px solid rgba(30,16,8,0.16);display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:24px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#B5471B;margin-bottom:30px;">Social</div>
+      <div style="margin-bottom:30px;"><div style="font-family:'Cormorant Garamond',serif;font-size:74px;line-height:0.92;">+40%</div><div style="font-size:25px;color:rgba(30,16,8,0.66);margin-top:8px;line-height:1.3;">Instagram followers, UK-wide</div></div>
+      <div><div style="font-family:'Cormorant Garamond',serif;font-size:74px;line-height:0.92;">5%</div><div style="font-size:25px;color:rgba(30,16,8,0.66);margin-top:8px;line-height:1.3;">Avg. engagement per post, IG &amp; FB</div></div>
+    </div>
+    <div style="padding:0 54px;border-right:1px solid rgba(30,16,8,0.16);display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:24px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#B5471B;margin-bottom:30px;">Marketing</div>
+      <div style="margin-bottom:26px;"><div style="font-family:'Cormorant Garamond',serif;font-size:74px;line-height:0.92;">+25%</div><div style="font-size:25px;color:rgba(30,16,8,0.66);margin-top:8px;line-height:1.3;">Website traffic, 30% new visitors</div></div>
+      <div style="margin-bottom:26px;"><div style="font-family:'Cormorant Garamond',serif;font-size:74px;line-height:0.92;">3×</div><div style="font-size:25px;color:rgba(30,16,8,0.66);margin-top:8px;line-height:1.3;">Email subscriber list growth</div></div>
+      <div><div style="font-family:'Cormorant Garamond',serif;font-size:74px;line-height:0.92;">+2.5%</div><div style="font-size:25px;color:rgba(30,16,8,0.66);margin-top:8px;line-height:1.3;">Website conversion rate</div></div>
+    </div>
+    <div style="padding:0 0 0 54px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:24px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#B5471B;margin-bottom:30px;">Financial</div>
+      <div style="margin-bottom:26px;"><div style="font-family:'Cormorant Garamond',serif;font-size:74px;line-height:0.92;">£100K</div><div style="font-size:25px;color:rgba(30,16,8,0.66);margin-top:8px;line-height:1.3;">Total revenue, on + offline</div></div>
+      <div style="margin-bottom:26px;"><div style="font-family:'Cormorant Garamond',serif;font-size:74px;line-height:0.92;">£30+</div><div style="font-size:25px;color:rgba(30,16,8,0.66);margin-top:8px;line-height:1.3;">Average order value, seasonal</div></div>
+      <div><div style="font-family:'Cormorant Garamond',serif;font-size:74px;line-height:0.92;">200</div><div style="font-size:25px;color:rgba(30,16,8,0.66);margin-top:8px;line-height:1.3;">Subscription sign-ups</div></div>
+    </div>
+  </div>
+</section>
+
+<section data-label="S · Strategy" data-screen-label="13" data-speaker-notes="Chapter three — Strategy. How do we get there?" style="box-sizing:border-box;background:#8C3515;color:#F2EBD9;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px;">
+  <div style="position:absolute;left:90px;top:84px;font-size:24px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,235,217,0.7);">Phase 03 / 06</div>
+  <div style="display:flex;gap:30px;margin-bottom:44px;">
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">S</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">O</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:#F2EBD9;">S</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">T</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">A</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">C</span>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:148px;line-height:0.92;margin:0;letter-spacing:-0.01em;">Strategy</h2>
+  <div style="font-size:26px;letter-spacing:0.06em;color:rgba(242,235,217,0.78);margin-top:30px;">How do we get there?</div>
+</section>
+
+<section data-label="Ansoff" data-screen-label="14" data-speaker-notes="The strategic choice is market penetration — the lowest-risk Ansoff quadrant. Existing products, existing market, but deeper: grow share, retention and engagement rather than stretching a solo team into new products or geographies." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:80px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Strategy / Growth Direction</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">Framework — Ansoff Matrix</div>
+  </div>
+  <div style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:74px;align-items:center;flex:1;margin-top:16px;">
+    <div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:104px;line-height:0.98;margin:0 0 28px;letter-spacing:-0.015em;">Go deeper,<br>not wider.</h2>
+      <p style="font-size:29px;line-height:1.55;color:rgba(30,16,8,0.72);margin:0 0 28px;">Market penetration is the lowest-risk path for an early-stage brand with constrained capacity — grow share in a familiar market rather than diversifying.</p>
+      <div style="font-size:26px;line-height:1.7;color:rgba(30,16,8,0.7);border-left:3px solid #B5471B;padding-left:24px;">Digital reinforcement &amp; retargeting<br>Loyalty — first-buyer offers, gift cards, automation<br>Retail &amp; pop-up expansion<br>Festive limited-edition bundles &amp; UGC</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:520px;">
+      <div style="background:#8C3515;color:#F2EBD9;padding:30px;display:flex;flex-direction:column;">
+        <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(242,235,217,0.7);">Existing product · Existing market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:44px;line-height:1.05;margin-top:auto;">Market Penetration</div>
+        <div style="font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:#F2EBD9;margin-top:10px;">◆ The campaign focus</div>
+      </div>
+      <div style="border:1px solid rgba(30,16,8,0.2);padding:30px;display:flex;flex-direction:column;color:rgba(30,16,8,0.5);">
+        <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;">New market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:40px;line-height:1.05;margin-top:auto;">Market Development</div>
+        <div style="font-size:24px;margin-top:10px;">Long-term</div>
+      </div>
+      <div style="border:1px solid rgba(30,16,8,0.2);padding:30px;display:flex;flex-direction:column;color:rgba(30,16,8,0.5);">
+        <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;">New product</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:40px;line-height:1.05;margin-top:auto;">Product Development</div>
+        <div style="font-size:24px;margin-top:10px;">Long-term</div>
+      </div>
+      <div style="border:1px solid rgba(30,16,8,0.2);padding:30px;display:flex;flex-direction:column;color:rgba(30,16,8,0.5);">
+        <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;">New · New</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:40px;line-height:1.05;margin-top:auto;">Diversification</div>
+        <div style="font-size:24px;margin-top:10px;">Future option</div>
       </div>
     </div>
-    <a href="index.html#contact">Contact</a>
   </div>
-  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</section>
+
+<section data-label="STP" data-screen-label="15" data-speaker-notes="A differentiated segmentation — four priority segments, each reached differently. Storytelling for the conscious, gifting for the givers, ritual for the wellness crowd, experiences for the seekers." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:84px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Strategy / Segmentation, Targeting, Positioning</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">Differentiated · 25–55</div>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:58px;line-height:1.0;margin:18px 0 0;letter-spacing:-0.01em;">Four emotionally driven segments.</h2>
+  <div style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:42px;align-items:center;">
+    <div style="padding:0 44px 0 0;border-right:1px solid rgba(30,16,8,0.16);display:flex;flex-direction:column;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:36px;color:#B5471B;">01</div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:38px;line-height:1.06;margin:16px 0 18px;">Conscious Consumers</h3>
+      <p style="font-size:25px;line-height:1.45;color:rgba(30,16,8,0.66);margin:0;">Value ethics &amp; craft. Won with founder-led storytelling and transparency.</p>
+      <div style="margin-top:auto;padding-top:22px;border-top:1px solid rgba(30,16,8,0.16);"><div style="font-size:24px;letter-spacing:0.1em;text-transform:uppercase;color:#B5471B;font-weight:600;">Reached via</div><div style="font-size:24px;line-height:1.3;color:rgba(30,16,8,0.7);margin-top:8px;">Founder films &amp; behind-the-scenes craft</div></div>
+    </div>
+    <div style="padding:0 44px;border-right:1px solid rgba(30,16,8,0.16);display:flex;flex-direction:column;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:36px;color:#B5471B;">02</div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:38px;line-height:1.06;margin:16px 0 18px;">Thoughtful Gifters</h3>
+      <p style="font-size:25px;line-height:1.45;color:rgba(30,16,8,0.66);margin:0;">Seek premium, meaningful presents. Shop the seasonal peaks.</p>
+      <div style="margin-top:auto;padding-top:22px;border-top:1px solid rgba(30,16,8,0.16);"><div style="font-size:24px;letter-spacing:0.1em;text-transform:uppercase;color:#B5471B;font-weight:600;">Reached via</div><div style="font-size:24px;line-height:1.3;color:rgba(30,16,8,0.7);margin-top:8px;">Seasonal gift bundles &amp; campaigns</div></div>
+    </div>
+    <div style="padding:0 44px;border-right:1px solid rgba(30,16,8,0.16);display:flex;flex-direction:column;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:36px;color:#B5471B;">03</div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:38px;line-height:1.06;margin:16px 0 18px;">Wellness Seekers</h3>
+      <p style="font-size:25px;line-height:1.45;color:rgba(30,16,8,0.66);margin:0;">Mindful indulgence over processed snacking. Dark chocolate as intentional pleasure.</p>
+      <div style="margin-top:auto;padding-top:22px;border-top:1px solid rgba(30,16,8,0.16);"><div style="font-size:24px;letter-spacing:0.1em;text-transform:uppercase;color:#B5471B;font-weight:600;">Reached via</div><div style="font-size:24px;line-height:1.3;color:rgba(30,16,8,0.7);margin-top:8px;">Ritual content &amp; mindful messaging</div></div>
+    </div>
+    <div style="padding:0 0 0 44px;display:flex;flex-direction:column;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:36px;color:#B5471B;">04</div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:38px;line-height:1.06;margin:16px 0 18px;">Experience Seekers</h3>
+      <p style="font-size:25px;line-height:1.45;color:rgba(30,16,8,0.66);margin:0;">Crave memorable rituals — tastings, workshops, stories worth sharing.</p>
+      <div style="margin-top:auto;padding-top:22px;border-top:1px solid rgba(30,16,8,0.16);"><div style="font-size:24px;letter-spacing:0.1em;text-transform:uppercase;color:#B5471B;font-weight:600;">Reached via</div><div style="font-size:24px;line-height:1.3;color:rgba(30,16,8,0.7);margin-top:8px;">Workshops, pop-ups &amp; tastings</div></div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(30,16,8,0.2);padding-top:24px;margin-top:8px;font-size:26px;color:rgba(30,16,8,0.72);"><span style="color:#B5471B;font-weight:600;letter-spacing:0.04em;">Positioning →</span> The premium emotional experience in craft chocolate — a mindful ritual, not just a treat.</div>
+</section>
+
+<section data-label="Persona — Sarah" data-screen-label="16" data-speaker-notes="One person, not a demographic grid. Sarah, 38 — values-led, sceptical of greenwashing, looking for meaning. She doesn't want chocolate; she wants permission to pause." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;">
+  <img src="assets/persona-photo.png" alt="Sarah, savouring a quiet moment" style="width:35%;height:100%;flex:none;object-fit:cover;object-position:50% 30%;" />
+  <div style="flex:1;padding:80px 96px;display:flex;flex-direction:column;justify-content:center;">
+    <div style="font-size:24px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;margin-bottom:22px;">Strategy / Customer Persona</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:62px;line-height:1.0;margin:0 0 38px;letter-spacing:-0.01em;">Sarah, 38 — Marketing Manager, Exeter</h2>
+    <div style="display:flex;flex-direction:column;gap:0;">
+      <div style="border-top:1px solid rgba(30,16,8,0.18);padding:20px 0;font-size:27px;line-height:1.35;"><span style="color:#B5471B;letter-spacing:0.16em;font-weight:600;margin-right:18px;">EARNS</span>£50–60K. Values quality over quantity.</div>
+      <div style="border-top:1px solid rgba(30,16,8,0.18);padding:20px 0;font-size:27px;line-height:1.35;"><span style="color:#B5471B;letter-spacing:0.16em;font-weight:600;margin-right:18px;">BUYS</span>From local, organic, story-led brands.</div>
+      <div style="border-top:1px solid rgba(30,16,8,0.18);padding:20px 0;font-size:27px;line-height:1.35;"><span style="color:#B5471B;letter-spacing:0.16em;font-weight:600;margin-right:18px;">FEELS</span>Frustrated by greenwashing. Wants to feel good about what she eats.</div>
+      <div style="border-top:1px solid rgba(30,16,8,0.18);border-bottom:1px solid rgba(30,16,8,0.18);padding:20px 0;font-size:27px;line-height:1.35;"><span style="color:#B5471B;letter-spacing:0.16em;font-weight:600;margin-right:18px;">SEEKS</span>Chocolate that means something. An experience, not just a product.</div>
+    </div>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:42px;line-height:1.3;color:#8C3515;margin:42px 0 0;">"She doesn't want chocolate. She wants permission to pause."</p>
+  </div>
+</section>
+
+<section data-label="Value Proposition" data-screen-label="17" data-speaker-notes="The positioning, built on Jobber's 4Cs — clarity, consistency, credibility, competitiveness. It resolves into one statement: chocolate as a mindful ritual." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:84px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Strategy / Value Proposition</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">Framework — Jobber's 4Cs</div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;flex:1;margin-top:20px;">
+    <div>
+      <div style="display:flex;flex-direction:column;">
+        <div style="border-top:1px solid rgba(30,16,8,0.18);padding:20px 0;"><div style="font-family:'Cormorant Garamond',serif;font-size:36px;margin-bottom:6px;">Clarity</div><div style="font-size:25px;color:rgba(30,16,8,0.66);line-height:1.35;">Chocolate as a moment of presence and sensory joy.</div></div>
+        <div style="border-top:1px solid rgba(30,16,8,0.18);padding:20px 0;"><div style="font-family:'Cormorant Garamond',serif;font-size:36px;margin-bottom:6px;">Consistency</div><div style="font-size:25px;color:rgba(30,16,8,0.66);line-height:1.35;">One tone across platforms — story, craft, ethics.</div></div>
+        <div style="border-top:1px solid rgba(30,16,8,0.18);padding:20px 0;"><div style="font-family:'Cormorant Garamond',serif;font-size:36px;margin-bottom:6px;">Credibility</div><div style="font-size:25px;color:rgba(30,16,8,0.66);line-height:1.35;">Transparent sourcing &amp; founder-led making.</div></div>
+        <div style="border-top:1px solid rgba(30,16,8,0.18);border-bottom:1px solid rgba(30,16,8,0.18);padding:20px 0;"><div style="font-family:'Cormorant Garamond',serif;font-size:36px;margin-bottom:6px;">Competitiveness</div><div style="font-size:25px;color:rgba(30,16,8,0.66);line-height:1.35;">Micro-batch quality + regional authenticity + emotion.</div></div>
+      </div>
+    </div>
+    <div style="background:#1E1008;color:#F2EBD9;padding:64px 58px;display:flex;flex-direction:column;justify-content:center;height:100%;box-sizing:border-box;">
+      <div style="font-size:24px;letter-spacing:0.2em;text-transform:uppercase;color:#C8862A;margin-bottom:26px;">Positioning Statement</div>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:46px;line-height:1.28;margin:0;">For those who crave meaning in the everyday, Nicola's Chocolate is the artisan maker that turns each bite into a mindful ritual — premium, ethical and made by hand in Devon.</p>
+    </div>
+  </div>
+</section>
+
+<section data-label="Marketing Mix" data-screen-label="18" data-speaker-notes="The 7Ps translate positioning into action — sensory product bundles, value-led pricing, wider DTC reach, an emotional promotion engine, and the people, process and physical evidence that deliver a premium experience." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:80px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Strategy / Marketing Mix</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">Framework — The 7Ps</div>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:54px;line-height:1.0;margin:18px 0 0;letter-spacing:-0.01em;">Translating the positioning into every lever.</h2>
+  <div style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto auto;gap:40px 44px;margin-top:30px;align-content:center;">
+    <div style="border-top:2px solid #B5471B;padding-top:20px;"><div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;margin-bottom:12px;">Product</div><div style="font-size:25px;line-height:1.4;color:rgba(30,16,8,0.68);">Ritual-based gifting bundles, seasonal flavours, ASMR sensory messaging.</div></div>
+    <div style="border-top:2px solid #B5471B;padding-top:20px;"><div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;margin-bottom:12px;">Price</div><div style="font-size:25px;line-height:1.4;color:rgba(30,16,8,0.68);">Premium, value-led via gift sets &amp; subscription tiers.</div></div>
+    <div style="border-top:2px solid #B5471B;padding-top:20px;"><div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;margin-bottom:12px;">Place</div><div style="font-size:25px;line-height:1.4;color:rgba(30,16,8,0.68);">Improved DTC UX, pop-ups, QR-led physical activations.</div></div>
+    <div style="border-top:2px solid #B5471B;padding-top:20px;"><div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;margin-bottom:12px;">Promotion</div><div style="font-size:25px;line-height:1.4;color:rgba(30,16,8,0.68);">"Let It Melt You" across Meta, email, UGC &amp; on-ground.</div></div>
+    <div style="border-top:1px solid rgba(30,16,8,0.22);padding-top:20px;"><div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;margin-bottom:12px;">People</div><div style="font-size:25px;line-height:1.4;color:rgba(30,16,8,0.68);">Founder as storyteller; light freelance CRM &amp; events support.</div></div>
+    <div style="border-top:1px solid rgba(30,16,8,0.22);padding-top:20px;"><div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;margin-bottom:12px;">Process</div><div style="font-size:25px;line-height:1.4;color:rgba(30,16,8,0.68);">Streamlined fulfilment; automated subscription &amp; gifting.</div></div>
+    <div style="border-top:1px solid rgba(30,16,8,0.22);padding-top:20px;"><div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;margin-bottom:12px;">Physical Evidence</div><div style="font-size:25px;line-height:1.4;color:rgba(30,16,8,0.68);">Tactile packaging, testimonials, sensory-forward design.</div></div>
+    <div style="border-top:1px solid rgba(30,16,8,0.22);padding-top:20px;display:flex;align-items:center;"><div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:32px;line-height:1.2;color:#8C3515;">Every P points back to one feeling — pause.</div></div>
+  </div>
+</section>
+
+<section data-label="The Big Idea" data-screen-label="19" data-speaker-notes="The emotional centrepiece. Let It Melt You — chocolate as ritual, a moment of pause. It runs as a hero cinematic film, seasonal storytelling, and a UGC ecosystem." style="box-sizing:border-box;background:#1E1008;color:#F2EBD9;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px;">
+  <image-slot id="idea-closeup" shape="rect" fit="cover" placeholder="Optional: drop an extreme close-up of melting chocolate (bleeds off the corner)" style="position:absolute;right:0;bottom:0;width:440px;height:440px;opacity:0.9;"></image-slot>
+  <div style="position:relative;z-index:2;">
+    <div style="font-size:24px;letter-spacing:0.26em;text-transform:uppercase;color:#C8862A;margin-bottom:30px;">Strategy / Campaign Big Idea</div>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:176px;line-height:0.88;margin:0;letter-spacing:-0.01em;">Let It<br>Melt You</h1>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:42px;line-height:1.35;color:rgba(242,235,217,0.86);margin:40px 0 0;">Chocolate as ritual. A moment of pause in a world that never stops.</p>
+    <div style="width:340px;height:1px;background:rgba(242,235,217,0.4);margin:44px auto 28px;"></div>
+    <div style="font-size:24px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(242,235,217,0.72);line-height:1.6;">Hero Film + Seasonal Storytelling + UGC Ecosystem</div>
+  </div>
+</section>
+
+<section data-label="T · Tactics" data-screen-label="20" data-speaker-notes="Chapter four — Tactics. The detail of execution." style="box-sizing:border-box;background:#8C3515;color:#F2EBD9;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px;">
+  <div style="position:absolute;left:90px;top:84px;font-size:24px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,235,217,0.7);">Phase 04 / 06</div>
+  <div style="display:flex;gap:30px;margin-bottom:44px;">
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">S</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">O</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">S</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:#F2EBD9;">T</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">A</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">C</span>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:148px;line-height:0.92;margin:0;letter-spacing:-0.01em;">Tactics</h2>
+  <div style="font-size:26px;letter-spacing:0.06em;color:rgba(242,235,217,0.78);margin-top:30px;">The detail of how.</div>
+</section>
+
+<section data-label="Hero · Hub · Help" data-screen-label="21" data-speaker-notes="The campaign architecture. Hero builds awareness with one big film; Hub deepens the bond with rituals and founder stories; Help converts with activations and seasonal drops." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:84px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Tactics / Content Architecture</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">Framework — Hero · Hub · Help</div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;margin-top:24px;">
+    <div style="flex:1;border-top:1px solid rgba(30,16,8,0.22);border-left:3px solid #B5471B;padding:30px 0 30px 44px;display:flex;align-items:center;gap:60px;">
+      <div style="width:160px;flex:none;"><div style="font-size:26px;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;color:#B5471B;">Hero</div><div style="font-size:24px;color:rgba(30,16,8,0.55);margin-top:6px;">Spark awareness</div></div>
+      <div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:46px;line-height:1.04;margin:0 0 12px;">The Film — "Every bite, a moment to pause"</h3><p style="font-size:26px;line-height:1.4;color:rgba(30,16,8,0.66);margin:0;max-width:1180px;">60-second cinematic, ASMR-led launch film. Website takeover + Instagram &amp; Facebook Reels + Meta video ads.</p></div>
+    </div>
+    <div style="flex:1;border-top:1px solid rgba(30,16,8,0.22);border-left:3px solid #B5471B;padding:30px 0 30px 44px;display:flex;align-items:center;gap:60px;">
+      <div style="width:160px;flex:none;"><div style="font-size:26px;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;color:#B5471B;">Hub</div><div style="font-size:24px;color:rgba(30,16,8,0.55);margin-top:6px;">Deepen the bond</div></div>
+      <div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:46px;line-height:1.04;margin:0 0 12px;">Rituals, Feelings &amp; Founder Stories</h3><p style="font-size:26px;line-height:1.4;color:rgba(30,16,8,0.66);margin:0;max-width:1180px;">"Feeling of the Week", Founder Notes, micro-ritual reels, #LetItMeltYou UGC loop &amp; a weekly email ritual series.</p></div>
+    </div>
+    <div style="flex:1;border-top:1px solid rgba(30,16,8,0.22);border-bottom:1px solid rgba(30,16,8,0.22);border-left:3px solid #B5471B;padding:30px 0 30px 44px;display:flex;align-items:center;gap:60px;">
+      <div style="width:160px;flex:none;"><div style="font-size:26px;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;color:#B5471B;">Help</div><div style="font-size:24px;color:rgba(30,16,8,0.55);margin-top:6px;">Drive conversion</div></div>
+      <div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:46px;line-height:1.04;margin:0 0 12px;">Moments That Convert</h3><p style="font-size:26px;line-height:1.4;color:rgba(30,16,8,0.66);margin:0;max-width:1180px;">"Missing: Stillness" guerrilla QR posters, seasonal topical drops &amp; pop-ups with "Pick a Feeling" tasting walls.</p></div>
+    </div>
+  </div>
+</section>
+
+<section data-label="Hero — The Film" data-screen-label="22" data-speaker-notes="The hero asset, mocked up. A 60-second sensory film as a vertical Reel — slow-motion melts, ambient sound, soft voiceover. Drop a real vertical still onto the phone to bring it to life." style="box-sizing:border-box;background:#1E1008;color:#F2EBD9;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;align-items:center;gap:90px;padding:80px 110px;">
+  <div style="flex:1;">
+    <div style="font-size:24px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#C8862A;margin-bottom:24px;">Hero / The Launch Film</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-style:italic;font-size:74px;line-height:1.05;margin:0 0 32px;letter-spacing:-0.01em;">"Every bite can be a moment to pause."</h2>
+    <p style="font-size:29px;line-height:1.55;color:rgba(242,235,217,0.82);margin:0 0 40px;max-width:700px;">A 60-second sensory film — slow-motion melts, textured close-ups, ambient sound and a soft voiceover. ASMR by design, made to slow the scroll.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;">
+      <span style="font-size:24px;letter-spacing:0.04em;border:1px solid rgba(242,235,217,0.3);padding:11px 24px;">Instagram &amp; Facebook Reels</span>
+      <span style="font-size:24px;letter-spacing:0.04em;border:1px solid rgba(242,235,217,0.3);padding:11px 24px;">Meta Video Ads</span>
+      <span style="font-size:24px;letter-spacing:0.04em;border:1px solid rgba(242,235,217,0.3);padding:11px 24px;">Homepage Takeover</span>
+    </div>
+  </div>
+  <div style="flex:none;width:392px;height:760px;background:#000;border-radius:44px;padding:12px;box-shadow:0 40px 90px rgba(0,0,0,0.5);position:relative;">
+    <div style="position:absolute;top:24px;left:50%;transform:translateX(-50%);width:120px;height:30px;background:#000;border-radius:0 0 16px 16px;z-index:3;"></div>
+    <div style="position:relative;width:100%;height:100%;border-radius:33px;overflow:hidden;background:#2A1A12;">
+      <img src="assets/reel-still.png" alt="Savouring a square of Nicola's chocolate" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:58% 50%;" />
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,9,7,0.3) 0%,rgba(12,9,7,0) 40%,rgba(12,9,7,0.75) 100%);"></div>
+      <div style="position:absolute;top:54px;left:0;right:0;text-align:center;font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1.2;color:#F2EBD9;padding:0 30px;">Every bite can be a moment to pause.</div>
+      <div style="position:absolute;bottom:44px;left:0;right:0;text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:30px;line-height:1.3;color:#F2EBD9;padding:0 30px;">So go ahead, let it melt you.</div>
+    </div>
+  </div>
+</section>
+
+<section data-label="Hub — Community" data-screen-label="23" data-speaker-notes="Hub keeps the relationship warm. A mocked-up Instagram feed — Feeling of the Week posts, founder notes, micro-ritual reels and the #LetItMeltYou UGC loop. Drop real photos into the grid tiles." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;gap:80px;padding:80px 110px;align-items:center;">
+  <div style="flex:1;">
+    <div style="font-size:24px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;margin-bottom:24px;">Hub / Rituals &amp; Community</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:64px;line-height:1.02;margin:0 0 34px;letter-spacing:-0.01em;">A weekly rhythm of feeling.</h2>
+    <div style="display:flex;flex-direction:column;">
+      <div style="border-top:1px solid rgba(30,16,8,0.18);padding:18px 0;font-size:27px;line-height:1.35;"><span style="font-family:'Cormorant Garamond',serif;font-size:32px;margin-right:14px;">Feeling of the Week</span><br><span style="color:rgba(30,16,8,0.62);">Soft visuals + a word — Stillness, Gratitude, Love — and a matching bar.</span></div>
+      <div style="border-top:1px solid rgba(30,16,8,0.18);padding:18px 0;font-size:27px;line-height:1.35;"><span style="font-family:'Cormorant Garamond',serif;font-size:32px;margin-right:14px;">Founder Notes</span><br><span style="color:rgba(30,16,8,0.62);">Handwritten reflections on flavour and gifting.</span></div>
+      <div style="border-top:1px solid rgba(30,16,8,0.18);border-bottom:1px solid rgba(30,16,8,0.18);padding:18px 0;font-size:27px;line-height:1.35;"><span style="font-family:'Cormorant Garamond',serif;font-size:32px;margin-right:14px;">#LetItMeltYou</span><br><span style="color:rgba(30,16,8,0.62);">A UGC loop — customers share their own pause-worthy moments.</span></div>
+    </div>
+  </div>
+  <div style="flex:none;width:660px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+    <img src="assets/hub-craft.png" alt="Hands breaking a fresh bar" style="width:100%;height:210px;object-fit:cover;display:block;" />
+    <div style="width:100%;height:210px;background:#8C3515;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px;box-sizing:border-box;"><div style="font-size:18px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(242,235,217,0.7);">Feeling of the week</div><div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:40px;color:#F2EBD9;margin-top:8px;">Stillness</div></div>
+    <img src="assets/hub-ritual.png" alt="A square beside a cup of tea" style="width:100%;height:210px;object-fit:cover;display:block;" />
+    <img src="assets/hub-founder.webp" alt="Founder holding cacao beans" style="width:100%;height:210px;object-fit:cover;display:block;" />
+    <img src="assets/hub-texture.png" alt="Glossy melted chocolate" style="width:100%;height:210px;object-fit:cover;display:block;" />
+    <div style="width:100%;height:210px;background:#1E1008;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;box-sizing:border-box;"><div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:30px;color:#F2EBD9;line-height:1.25;">let it<br>melt you</div></div>
+    <img src="assets/hub-evening.png" alt="Evening stillness — candle and chocolate" style="width:100%;height:210px;object-fit:cover;display:block;" />
+    <img src="assets/hub-flatlay.png" alt="Nicola's bean-to-bar packets" style="width:100%;height:210px;object-fit:cover;display:block;" />
+    <img src="assets/hub-ugc.png" alt="Nicola's bar by the Devon coast" style="width:100%;height:210px;object-fit:cover;display:block;" />
+  </div>
+</section>
+
+<section data-label="Help — Activation" data-screen-label="24" data-speaker-notes="Help drives conversion with low-cost activations. The hero piece is a guerrilla poster — Missing: Stillness — with a QR to a quiz and newsletter sign-up, placed where people pause: cafés, yoga studios, co-working spaces." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;gap:80px;padding:80px 110px;align-items:center;">
+  <div style="flex:1;">
+    <div style="font-size:24px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;margin-bottom:24px;">Help / On-the-Ground Activation</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:64px;line-height:1.02;margin:0 0 34px;letter-spacing:-0.01em;">Stillness, where people scroll and pause.</h2>
+    <div style="display:flex;flex-direction:column;">
+      <div style="border-top:1px solid rgba(30,16,8,0.18);padding:18px 0;font-size:27px;line-height:1.35;"><span style="color:#B5471B;font-weight:600;letter-spacing:0.04em;">Guerrilla QR posters</span> in cafés, yoga &amp; co-working spaces → quiz + sign-up.</div>
+      <div style="border-top:1px solid rgba(30,16,8,0.18);padding:18px 0;font-size:27px;line-height:1.35;"><span style="color:#B5471B;font-weight:600;letter-spacing:0.04em;">"Pick a Feeling"</span> tasting walls &amp; QR-gifting at pop-ups and markets.</div>
+      <div style="border-top:1px solid rgba(30,16,8,0.18);padding:18px 0;font-size:27px;line-height:1.35;"><span style="color:#B5471B;font-weight:600;letter-spacing:0.04em;">Topical drops</span> — Melt into Love, Calm, Joy across the seasons.</div>
+      <div style="border-top:1px solid rgba(30,16,8,0.18);border-bottom:1px solid rgba(30,16,8,0.18);padding:18px 0;font-size:27px;line-height:1.35;"><span style="color:#B5471B;font-weight:600;letter-spacing:0.04em;">Subscription boxes</span> — emotion-themed bars with playlists &amp; prompts.</div>
+    </div>
+  </div>
+  <div style="flex:none;width:520px;height:720px;background:#8C3515;color:#F2EBD9;padding:64px 56px;box-sizing:border-box;display:flex;flex-direction:column;box-shadow:0 30px 70px rgba(0,0,0,0.35);">
+    <div style="font-size:24px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(242,235,217,0.7);">Missing</div>
+    <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:108px;line-height:0.9;margin:18px 0 0;letter-spacing:-0.01em;">Stillness</h3>
+    <p style="font-size:27px;line-height:1.45;color:rgba(242,235,217,0.85);margin:34px 0 0;">Last seen: somewhere between your inbox and your to-do list. Reward: one quiet moment.</p>
+    <div style="margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;">
+      <div style="width:150px;height:150px;background:#F2EBD9;display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(5,1fr);gap:4px;padding:14px;box-sizing:border-box;">
+        <div style="background:#1E1008;"></div><div style="background:#1E1008;"></div><div></div><div style="background:#1E1008;"></div><div style="background:#1E1008;"></div>
+        <div style="background:#1E1008;"></div><div></div><div style="background:#1E1008;"></div><div></div><div style="background:#1E1008;"></div>
+        <div></div><div style="background:#1E1008;"></div><div style="background:#1E1008;"></div><div style="background:#1E1008;"></div><div></div>
+        <div style="background:#1E1008;"></div><div></div><div style="background:#1E1008;"></div><div></div><div style="background:#1E1008;"></div>
+        <div style="background:#1E1008;"></div><div style="background:#1E1008;"></div><div></div><div style="background:#1E1008;"></div><div style="background:#1E1008;"></div>
+      </div>
+      <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:34px;line-height:1.1;text-align:right;">let it<br>melt you</div>
+    </div>
+  </div>
+</section>
+
+<section data-label="The Range" data-screen-label="25" data-speaker-notes="A portfolio set-piece — a match-cut product reel. Hard background cuts, the bar swaps, the name fades in. Built to run natively in the browser and embed into the portfolio site. Drop the real product photos onto each slot." style="box-sizing:border-box;background:#1E1008;font-family:'Cormorant Garamond',serif;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:#F0C020;opacity:0;animation:mcFrame 8s linear 0s infinite;display:flex;align-items:center;justify-content:center;"><img src="assets/mc-toasted-white.png" alt="Toasted White" style="width:980px;height:980px;object-fit:contain;" /></div>
+  <div style="position:absolute;inset:0;background:#1A9E60;opacity:0;animation:mcFrame 8s linear 2s infinite;display:flex;align-items:center;justify-content:center;"><img src="assets/mc-el-salvador.png" alt="85% El Salvador" style="width:980px;height:980px;object-fit:contain;" /></div>
+  <div style="position:absolute;inset:0;background:#C9A8D4;opacity:0;animation:mcFrame 8s linear 4s infinite;display:flex;align-items:center;justify-content:center;"><img src="assets/mc-earl-grey.png" alt="Earl Grey Tea" style="width:980px;height:980px;object-fit:contain;" /></div>
+  <div style="position:absolute;inset:0;background:#E86210;opacity:0;animation:mcFrame 8s linear 6s infinite;display:flex;align-items:center;justify-content:center;"><img src="assets/mc-colombia.png" alt="70% Colombia" style="width:980px;height:980px;object-fit:contain;" /></div>
+  <div style="position:absolute;left:90px;top:84px;z-index:5;font-family:'Archivo Narrow',sans-serif;font-size:24px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#2D1A0E;">Tactics / The Range</div>
+  <div style="position:absolute;left:0;right:0;bottom:44px;display:flex;justify-content:center;gap:16px;z-index:5;">
+    <div style="width:12px;height:12px;border-radius:50%;background:#2D1A0E;opacity:.3;animation:mcPipOn 8s linear 0s infinite;"></div>
+    <div style="width:12px;height:12px;border-radius:50%;background:#2D1A0E;opacity:.3;animation:mcPipOn 8s linear 2s infinite;"></div>
+    <div style="width:12px;height:12px;border-radius:50%;background:#2D1A0E;opacity:.3;animation:mcPipOn 8s linear 4s infinite;"></div>
+    <div style="width:12px;height:12px;border-radius:50%;background:#2D1A0E;opacity:.3;animation:mcPipOn 8s linear 6s infinite;"></div>
+  </div>
+</section>
+
+<section data-label="A · Action" data-screen-label="26" data-speaker-notes="Chapter five — Action. Who does what, when, and for how much." style="box-sizing:border-box;background:#8C3515;color:#F2EBD9;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px;">
+  <div style="position:absolute;left:90px;top:84px;font-size:24px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,235,217,0.7);">Phase 05 / 06</div>
+  <div style="display:flex;gap:30px;margin-bottom:44px;">
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">S</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">O</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">S</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">T</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:#F2EBD9;">A</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">C</span>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:148px;line-height:0.92;margin:0;letter-spacing:-0.01em;">Action</h2>
+  <div style="font-size:26px;letter-spacing:0.06em;color:rgba(242,235,217,0.78);margin-top:30px;">Who, when, how much.</div>
+</section>
+
+<section data-label="Roadmap" data-screen-label="27" data-speaker-notes="One year, four phases — front-loading the film, building community, then a UGC push. Each phase carries its Hero, Hub and Help moves plus the technical build behind them, with a risk and mitigation noted throughout." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:80px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Action / Implementation Roadmap</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">July 2025 → June 2026</div>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:54px;line-height:1.0;margin:18px 0 0;letter-spacing:-0.01em;">Front-load the film, build the community, close on UGC.</h2>
+  <div style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:48px;margin-top:30px;align-items:center;">
+    <div style="border-top:2px solid #B5471B;padding-top:24px;display:flex;flex-direction:column;">
+      <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#B5471B;font-weight:700;">Phase 1</div>
+      <div style="font-size:24px;color:rgba(30,16,8,0.6);margin:8px 0 22px;">Jul – Sept 2025</div>
+      <div style="font-size:24px;line-height:1.5;color:rgba(30,16,8,0.72);"><strong style="font-weight:600;">Hero ·</strong> Film launch &amp; email series<br><strong style="font-weight:600;">Hub ·</strong> Content planning<br><strong style="font-weight:600;">Help ·</strong> Guerrilla &amp; in-person<br><span style="color:rgba(30,16,8,0.5);">Tech · SEO, UX, analytics, CRM setup</span></div>
+      <div style="margin-top:auto;padding-top:18px;font-size:24px;color:#8C3515;line-height:1.35;">Risk: low open rates → actionable content, keyword bidding.</div>
+    </div>
+    <div style="border-top:2px solid #B5471B;padding-top:24px;display:flex;flex-direction:column;">
+      <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#B5471B;font-weight:700;">Phase 2</div>
+      <div style="font-size:24px;color:rgba(30,16,8,0.6);margin:8px 0 22px;">Oct – Dec 2025</div>
+      <div style="font-size:24px;line-height:1.5;color:rgba(30,16,8,0.72);"><strong style="font-weight:600;">Hero ·</strong> Subscription box + paid ads<br><strong style="font-weight:600;">Hub ·</strong> A/B testing &amp; email<br><strong style="font-weight:600;">Help ·</strong> Seasonal &amp; topical<br><span style="color:rgba(30,16,8,0.5);">Tech · Landing pages, bundling, funnels</span></div>
+      <div style="margin-top:auto;padding-top:18px;font-size:24px;color:#8C3515;line-height:1.35;">Risk: low resonance → behaviour-based retargeting.</div>
+    </div>
+    <div style="border-top:2px solid #B5471B;padding-top:24px;display:flex;flex-direction:column;">
+      <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#B5471B;font-weight:700;">Phase 3</div>
+      <div style="font-size:24px;color:rgba(30,16,8,0.6);margin:8px 0 22px;">Jan – Apr 2026</div>
+      <div style="font-size:24px;line-height:1.5;color:rgba(30,16,8,0.72);"><strong style="font-weight:600;">Hero ·</strong> Pop-up shops<br><strong style="font-weight:600;">Hub ·</strong> Workshops, UGC, retargeting<br><strong style="font-weight:600;">Help ·</strong> Surveys &amp; Easter<br><span style="color:rgba(30,16,8,0.5);">Tech · UTM tracking, gifting automation</span></div>
+      <div style="margin-top:auto;padding-top:18px;font-size:24px;color:#8C3515;line-height:1.35;">Risk: thin feedback → creative CTAs, proactive picks.</div>
+    </div>
+    <div style="border-top:2px solid #B5471B;padding-top:24px;display:flex;flex-direction:column;">
+      <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#B5471B;font-weight:700;">Phase 4</div>
+      <div style="font-size:24px;color:rgba(30,16,8,0.6);margin:8px 0 22px;">May – Jun 2026</div>
+      <div style="font-size:24px;line-height:1.5;color:rgba(30,16,8,0.72);"><strong style="font-weight:600;">Hero ·</strong> Hashtag campaign<br><strong style="font-weight:600;">Hub ·</strong> UGC &amp; Instagram Live<br><strong style="font-weight:600;">Help ·</strong> Email engagement<br><span style="color:rgba(30,16,8,0.5);">Tech · Analytics review, testimonials</span></div>
+      <div style="margin-top:auto;padding-top:18px;font-size:24px;color:#8C3515;line-height:1.35;">Risk: minimal UGC → insight-rooted, differentiated content.</div>
+    </div>
+  </div>
+</section>
+
+<section data-label="Budget" data-screen-label="28" data-speaker-notes="Twenty thousand pounds, phased to front-load the film and back-load community, with a £2,000 contingency held in reserve. Phase two carries the heaviest spend for paid ads and seasonal gifting." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:80px 110px 70px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Action / Budget Allocation</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">£20,000 · ex. VAT</div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;margin-top:22px;">
+    <div style="flex:1;border-top:1px solid rgba(30,16,8,0.22);display:flex;align-items:center;gap:50px;padding:20px 0;">
+      <div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:70px;line-height:1;color:#B5471B;width:110px;flex:none;">01</div>
+      <div style="width:220px;flex:none;font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(30,16,8,0.7);">Jul – Sept 2025</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:52px;width:170px;flex:none;">£4,500</div>
+      <div style="flex:1;height:12px;background:rgba(30,16,8,0.1);position:relative;"><div style="position:absolute;left:0;top:0;bottom:0;width:69%;background:#B5471B;"></div></div>
+      <div style="width:340px;flex:none;font-size:24px;line-height:1.3;color:rgba(30,16,8,0.66);">Hero film, SEO &amp; UX refresh, content pillars</div>
+    </div>
+    <div style="flex:1;border-top:1px solid rgba(30,16,8,0.22);display:flex;align-items:center;gap:50px;padding:20px 0;">
+      <div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:70px;line-height:1;color:#B5471B;width:110px;flex:none;">02</div>
+      <div style="width:220px;flex:none;font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(30,16,8,0.7);">Oct – Dec 2025</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:52px;width:170px;flex:none;">£6,500</div>
+      <div style="flex:1;height:12px;background:rgba(30,16,8,0.1);position:relative;"><div style="position:absolute;left:0;top:0;bottom:0;width:100%;background:#B5471B;"></div></div>
+      <div style="width:340px;flex:none;font-size:24px;line-height:1.3;color:rgba(30,16,8,0.66);">Meta &amp; Google ads, seasonal gifting</div>
+    </div>
+    <div style="flex:1;border-top:1px solid rgba(30,16,8,0.22);display:flex;align-items:center;gap:50px;padding:20px 0;">
+      <div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:70px;line-height:1;color:#B5471B;width:110px;flex:none;">03</div>
+      <div style="width:220px;flex:none;font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(30,16,8,0.7);">Jan – Apr 2026</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:52px;width:170px;flex:none;">£5,000</div>
+      <div style="flex:1;height:12px;background:rgba(30,16,8,0.1);position:relative;"><div style="position:absolute;left:0;top:0;bottom:0;width:77%;background:#B5471B;"></div></div>
+      <div style="width:340px;flex:none;font-size:24px;line-height:1.3;color:rgba(30,16,8,0.66);">Pop-ups, partnerships, subscription push</div>
+    </div>
+    <div style="flex:1;border-top:1px solid rgba(30,16,8,0.22);display:flex;align-items:center;gap:50px;padding:20px 0;">
+      <div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:70px;line-height:1;color:#B5471B;width:110px;flex:none;">04</div>
+      <div style="width:220px;flex:none;font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(30,16,8,0.7);">May – Jun 2026</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:52px;width:170px;flex:none;">£2,000</div>
+      <div style="flex:1;height:12px;background:rgba(30,16,8,0.1);position:relative;"><div style="position:absolute;left:0;top:0;bottom:0;width:31%;background:#B5471B;"></div></div>
+      <div style="width:340px;flex:none;font-size:24px;line-height:1.3;color:rgba(30,16,8,0.66);">UGC contests, influencer seeding, hashtag</div>
+    </div>
+    <div style="flex:1;border-top:1px solid rgba(30,16,8,0.22);border-bottom:1px solid rgba(30,16,8,0.22);display:flex;align-items:center;gap:50px;padding:20px 0;">
+      <div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:70px;line-height:1;color:rgba(30,16,8,0.35);width:110px;flex:none;">+</div>
+      <div style="width:220px;flex:none;font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(30,16,8,0.5);">Throughout</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:52px;width:170px;flex:none;color:rgba(30,16,8,0.5);">£2,000</div>
+      <div style="flex:1;height:12px;background:rgba(30,16,8,0.1);position:relative;"><div style="position:absolute;left:0;top:0;bottom:0;width:31%;background:rgba(30,16,8,0.3);"></div></div>
+      <div style="width:340px;flex:none;font-size:24px;line-height:1.3;color:rgba(30,16,8,0.5);">Contingency — scaling high performers</div>
+    </div>
+  </div>
+</section>
+
+<section data-label="C · Control" data-screen-label="29" data-speaker-notes="Chapter six — Control. How do we measure and protect the plan?" style="box-sizing:border-box;background:#8C3515;color:#F2EBD9;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px;">
+  <div style="position:absolute;left:90px;top:84px;font-size:24px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,235,217,0.7);">Phase 06 / 06</div>
+  <div style="display:flex;gap:30px;margin-bottom:44px;">
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">S</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">O</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">S</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">T</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:rgba(242,235,217,0.3);">A</span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:46px;color:#F2EBD9;">C</span>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:148px;line-height:0.92;margin:0;letter-spacing:-0.01em;">Control</h2>
+  <div style="font-size:26px;letter-spacing:0.06em;color:rgba(242,235,217,0.78);margin-top:30px;">How do we measure?</div>
+</section>
+
+<section data-label="KPIs" data-screen-label="30" data-speaker-notes="Every objective has a KPI, a target and a data source — measured weekly, bi-weekly and monthly. This is the dashboard that keeps the campaign honest." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:80px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Control / KPIs &amp; Measurement</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">Weekly · Bi-weekly · Monthly</div>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:54px;line-height:1.0;margin:18px 0 6px;letter-spacing:-0.01em;">Measured, not hoped for.</h2>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;">
+    <div style="display:flex;gap:30px;padding:10px 0;font-size:21px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);font-weight:600;"><div style="width:240px;flex:none;">Channel</div><div style="flex:1;">Key Metric</div><div style="width:240px;flex:none;">Target</div><div style="width:300px;flex:none;">Data Source</div></div>
+    <div style="display:flex;gap:30px;border-top:1px solid rgba(30,16,8,0.18);padding:18px 0;align-items:baseline;"><div style="width:240px;flex:none;font-family:'Cormorant Garamond',serif;font-size:34px;">Social</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);">Reach, followers, engagement</div><div style="width:240px;flex:none;font-size:25px;color:#8C3515;font-weight:600;">+40% · 5%</div><div style="width:300px;flex:none;font-size:24px;color:rgba(30,16,8,0.55);">Meta Business Suite</div></div>
+    <div style="display:flex;gap:30px;border-top:1px solid rgba(30,16,8,0.18);padding:18px 0;align-items:baseline;"><div style="width:240px;flex:none;font-family:'Cormorant Garamond',serif;font-size:34px;">Website</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);">Unique visitors, conversion rate</div><div style="width:240px;flex:none;font-size:25px;color:#8C3515;font-weight:600;">+25% · +2.5%</div><div style="width:300px;flex:none;font-size:24px;color:rgba(30,16,8,0.55);">Google Analytics</div></div>
+    <div style="display:flex;gap:30px;border-top:1px solid rgba(30,16,8,0.18);padding:18px 0;align-items:baseline;"><div style="width:240px;flex:none;font-family:'Cormorant Garamond',serif;font-size:34px;">Email</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);">List growth, click-through rate</div><div style="width:240px;flex:none;font-size:25px;color:#8C3515;font-weight:600;">3× · 200 subs</div><div style="width:300px;flex:none;font-size:24px;color:rgba(30,16,8,0.55);">Mailchimp</div></div>
+    <div style="display:flex;gap:30px;border-top:1px solid rgba(30,16,8,0.18);padding:18px 0;align-items:baseline;"><div style="width:240px;flex:none;font-family:'Cormorant Garamond',serif;font-size:34px;">Paid Ads</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);">CPA, CTR, ROAS</div><div style="width:240px;flex:none;font-size:25px;color:#8C3515;font-weight:600;">3× ROAS</div><div style="width:300px;flex:none;font-size:24px;color:rgba(30,16,8,0.55);">Google &amp; Meta Ads, UTM</div></div>
+    <div style="display:flex;gap:30px;border-top:1px solid rgba(30,16,8,0.18);border-bottom:1px solid rgba(30,16,8,0.18);padding:18px 0;align-items:baseline;"><div style="width:240px;flex:none;font-family:'Cormorant Garamond',serif;font-size:34px;">Financial</div><div style="flex:1;font-size:25px;color:rgba(30,16,8,0.66);">Revenue, AOV, subscriptions</div><div style="width:240px;flex:none;font-size:25px;color:#8C3515;font-weight:600;">£100K · £30+</div><div style="width:300px;flex:none;font-size:24px;color:rgba(30,16,8,0.55);">Online + offline tracking</div></div>
+  </div>
+</section>
+
+<section data-label="ROI &amp; Forecast" data-screen-label="31" data-speaker-notes="The prize. From a £25K base, the campaign forecasts £100K — a 300% lift, justified by the low-base effect and hero-content reach. 2,000 units at £50 nets £45K profit on £20K spend: a 225% ROI." style="box-sizing:border-box;background:#1E1008;color:#F2EBD9;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:80px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#C8862A;">Control / Financial Forecast</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(242,235,217,0.45);">By August 2026</div>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:30px;align-items:center;">
+    <div style="padding-right:46px;border-right:1px solid rgba(242,235,217,0.16);"><div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:118px;line-height:0.9;color:#C8862A;">£100K</div><div style="font-size:26px;line-height:1.4;color:rgba(242,235,217,0.78);margin-top:16px;">Forecast revenue — a 300% lift from a £25K base.</div></div>
+    <div style="padding:0 46px;border-right:1px solid rgba(242,235,217,0.16);"><div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:118px;line-height:0.9;color:#C8862A;">225%</div><div style="font-size:26px;line-height:1.4;color:rgba(242,235,217,0.78);margin-top:16px;">Campaign return on investment.</div></div>
+    <div style="padding:0 46px;border-right:1px solid rgba(242,235,217,0.16);"><div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:118px;line-height:0.9;color:#C8862A;">3×</div><div style="font-size:26px;line-height:1.4;color:rgba(242,235,217,0.78);margin-top:16px;">Target ROAS on Meta &amp; Google ads.</div></div>
+    <div style="padding-left:46px;"><div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:118px;line-height:0.9;color:#C8862A;">+40%</div><div style="font-size:26px;line-height:1.4;color:rgba(242,235,217,0.78);margin-top:16px;">Instagram community, plus 200 subscribers.</div></div>
+  </div>
+  <div style="border-top:1px solid rgba(242,235,217,0.2);padding-top:26px;display:flex;gap:46px;font-size:25px;letter-spacing:0.04em;color:rgba(242,235,217,0.72);">
+    <span>2,000 units × £50 = £100K revenue</span><span style="color:rgba(242,235,217,0.35);">/</span>
+    <span>− £35K production − £20K marketing</span><span style="color:rgba(242,235,217,0.35);">/</span>
+    <span style="color:#C8862A;">= £45K net profit</span>
+  </div>
+</section>
+
+<section data-label="Beyond the Campaign" data-screen-label="32" data-speaker-notes="The campaign penetrates; the future grows. Beyond year one, the Ansoff matrix opens product development, market development and diversification — keeping chocolate as a mindful escape at the core." style="box-sizing:border-box;background:#F2EBD9;color:#1E1008;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:84px 110px;">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <div style="font-size:25px;letter-spacing:0.24em;text-transform:uppercase;font-weight:600;color:#B5471B;">Control / Long-Term Recommendations</div>
+    <div style="font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(30,16,8,0.45);">Beyond Year One</div>
+  </div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:58px;line-height:1.0;margin:18px 0 0;letter-spacing:-0.01em;">Penetrate now, grow next.</h2>
+  <div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;">
+    <div style="padding:0 54px 0 0;border-right:1px solid rgba(30,16,8,0.16);display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;color:#B5471B;">Product Development</div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:40px;line-height:1.06;margin:18px 0 20px;">Deepen the range</h3>
+      <p style="font-size:26px;line-height:1.5;color:rgba(30,16,8,0.66);margin:0;">Coated fruit &amp; nuts, vegan lines, personalised bars and campaign-tied seasonal collections to lift AOV.</p>
+    </div>
+    <div style="padding:0 54px;border-right:1px solid rgba(30,16,8,0.16);display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;color:#B5471B;">Market Development</div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:40px;line-height:1.06;margin:18px 0 20px;">Widen the reach</h3>
+      <p style="font-size:26px;line-height:1.5;color:rgba(30,16,8,0.66);margin:0;">UK-wide boutique &amp; gifting partnerships, corporate gifting, then export to taste-led markets — UAE, Germany.</p>
+    </div>
+    <div style="padding:0 0 0 54px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:24px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;color:#B5471B;">Diversification</div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:40px;line-height:1.06;margin:18px 0 20px;">Extend the feeling</h3>
+      <p style="font-size:26px;line-height:1.5;color:rgba(30,16,8,0.66);margin:0;">Sensory self-care kits, wellness collaborations and experience-led gifting — chocolate as a mindful escape.</p>
+    </div>
+  </div>
+</section>
+
+<section data-label="Closing" data-screen-label="33" data-speaker-notes="The emotional exit. Every bite can be a moment to pause. So go ahead — let it melt you." style="box-sizing:border-box;background:#1E1008;color:#F2EBD9;font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px;">
+  <div style="font-family:'Cormorant Garamond',serif;font-size:50px;line-height:1.3;color:rgba(242,235,217,0.7);margin:0 0 44px;">Every bite can be a moment to pause.</div>
+  <h1 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-style:italic;font-size:152px;line-height:0.95;margin:0;letter-spacing:-0.01em;">Let it melt you.</h1>
+  <div style="font-size:24px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(242,235,217,0.6);margin-top:64px;line-height:1.8;">Nicola's Chocolate&nbsp;&nbsp;/&nbsp;&nbsp;Let It Melt You&nbsp;&nbsp;/&nbsp;&nbsp;2025–26</div>
+</section>
+
+<nav style="max-width:1280px;margin:0 auto;padding:clamp(44px,7vh,80px) clamp(20px,4vw,56px);display:flex;justify-content:space-between;gap:24px;border-top:1px solid rgba(242,235,217,0.16);font-family:'Archivo Narrow','Helvetica Neue',Arial,sans-serif;">
+  <a href="case-study-client.html" style="text-decoration:none;color:#F2EBD9;max-width:46%;" style-hover="color:#B5471B;">
+    <div style="font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(242,235,217,0.55);margin-bottom:12px;">← Previous</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(1.4rem,2.6vw,2.2rem);letter-spacing:-0.01em;line-height:1.1;">Client Work</div>
+  </a>
+  <a href="case-study-exeter.html" style="text-decoration:none;color:#F2EBD9;max-width:46%;text-align:right;" style-hover="color:#B5471B;">
+    <div style="font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(242,235,217,0.55);margin-bottom:12px;">Next →</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(1.4rem,2.6vw,2.2rem);letter-spacing:-0.01em;line-height:1.1;">Visit Exeter</div>
+  </a>
 </nav>
 
-
-
-<section class="hero-cs">
-  <div class="container">
-    <p class="label">Case Study, University of Exeter</p>
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;">
-      <h1 class="h1">Two clients.<br>Two industries.<br><em>One framework.</em></h1>
-      <div style="display:flex;gap:1.5rem;align-items:center;flex-shrink:0;padding-top:1rem;">
-        <img src="img/ist-logo.jpg" alt="Isles of Scilly Travel" style="height:90px;border-radius:4px;">
-        <img src="img/nicola-logo.jpg" alt="Nicola's Chocolate" style="height:90px;border-radius:4px;">
-      </div>
-    </div>
-    <p>Full marketing plans built for two real clients during an MSc Marketing module. Each follows the SOSTAC framework, adapted to radically different business contexts, budgets, and audiences.</p>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="cs-client-grid reveal">
-      <div class="cs-client">
-        <p class="cs-client-label">Client 01</p>
-        <h3 class="cs-client-name">Isles of Scilly Travel</h3>
-        <p class="cs-client-sub">Destination repositioning campaign targeting Gen Z and Millennial travellers. £150K budget.</p>
-        <div class="cs-client-tags">
-          <span class="cs-mini-tag">Tourism</span>
-          <span class="cs-mini-tag">B2C</span>
-          <span class="cs-mini-tag">Market development</span>
-          <span class="cs-mini-tag">£150K</span>
-        </div>
-      </div>
-      <div class="cs-client">
-        <p class="cs-client-label">Client 02</p>
-        <h3 class="cs-client-name">Nicola's Chocolate</h3>
-        <p class="cs-client-sub">Brand-building campaign for artisan bean-to-bar chocolatier. £20K budget.</p>
-        <div class="cs-client-tags">
-          <span class="cs-mini-tag">FMCG</span>
-          <span class="cs-mini-tag">D2C</span>
-          <span class="cs-mini-tag">Market penetration</span>
-          <span class="cs-mini-tag">£20K</span>
-        </div>
-      </div>
-    </div>
-
-    <p class="label" style="color:#1d9e75;">Client 01, Isles of Scilly Travel</p>
-    <h2 class="h2">"Scilly Uncharted", <em>repositioning an island</em></h2>
-    <p class="body-text">IST is the sole transport provider to the Isles of Scilly, carrying ~190,000 passengers annually via ferry and Skybus. Tourism drives 85% of the island economy, but the visitor base skews heavily older. Younger audiences perceive the destination as too remote and too expensive.</p>
-
-    <div class="metric-row reveal">
-      <div class="metric"><div class="metric-num">190K</div><div class="metric-label">Annual passengers</div></div>
-      <div class="metric"><div class="metric-num">85%</div><div class="metric-label">Tourism dependency</div></div>
-      <div class="metric"><div class="metric-num">£150K</div><div class="metric-label">Campaign budget</div></div>
-      <div class="metric"><div class="metric-num">16 mo</div><div class="metric-label">Duration</div></div>
-    </div>
-
-    <div class="insight-soft teal reveal">
-      <p class="insight-soft-label">Key strategic insight</p>
-      <p class="insight-soft-text">IST's strongest opportunity lies in repositioning itself as a sustainable, accessible UK island experience for younger travellers, supported by fleet upgrades and digital-first marketing.</p>
-    </div>
-
-    <h3 class="h3">Objectives</h3>
-    <div class="obj-grid reveal">
-      <div class="obj"><div class="obj-type">Marketing</div><div class="obj-text">+30% social media reach among 18–35s by May 2026</div></div>
-      <div class="obj"><div class="obj-type">Marketing</div><div class="obj-text">+10% bookings from 18–35 segment by end of 2026 season</div></div>
-      <div class="obj"><div class="obj-type">Marketing</div><div class="obj-text">+25% engagement rate (likes, shares, UGC) Jan–Oct 2026</div></div>
-      <div class="obj"><div class="obj-type">Financial</div><div class="obj-text">+30% online sales revenue within 6 months of launch</div></div>
-    </div>
-
-    <h3 class="h3">Strategy</h3>
-    <p class="body-text">Primary: <strong>market development</strong>, expanding into younger segments with existing services. Positioning: "The UK's most authentic sustainable island escape, close to home, yet a world away."</p>
-
-    <h3 class="h3">Tactics & creative</h3>
-    <div class="creative-grid reveal">
-      <div class="creative">
-        <div class="creative-header travel"><p class="creative-top">IST</p><p class="creative-name">Website hero banner</p></div>
-        <div class="creative-body"><p class="creative-desc">Full-bleed aerial shot with 'Uncharted Scilly' headline and mobile-first 3-click booking flow.</p>
-        <div class="creative-tags"><span class="creative-tag">Hero</span><span class="creative-tag">CTA</span><span class="creative-tag">Mobile-first</span></div></div>
-      </div>
-      <div class="creative">
-        <div class="creative-header travel"><p class="creative-top">IST</p><p class="creative-name">Instagram reel series</p></div>
-        <div class="creative-body"><p class="creative-desc">'48 Hours in Scilly' influencer vlogs, island-hopping time-lapses, eco-adventure highlights.</p>
-        <div class="creative-tags"><span class="creative-tag">Reels</span><span class="creative-tag">Influencer</span><span class="creative-tag">UGC</span></div></div>
-      </div>
-      <div class="creative">
-        <div class="creative-header travel"><p class="creative-top">IST</p><p class="creative-name">UNiDAYS student promo</p></div>
-        <div class="creative-body"><p class="creative-desc">20% ferry discount for verified students with co-branded landing page and bundles.</p>
-        <div class="creative-tags"><span class="creative-tag">Partnership</span><span class="creative-tag">Student</span><span class="creative-tag">Conversion</span></div></div>
-      </div>
-    </div>
-
-    <h3 class="h3">Action & timeline</h3>
-    <div class="phase-grid reveal">
-      <div class="phase teal">
-        <p class="phase-label">Pre-launch, Sept–Dec 2025</p>
-        <p class="phase-title">Build anticipation</p>
-        <p class="phase-item">SEO & blog content rollout</p>
-        <p class="phase-item">Influencer scouting and contracts</p>
-        <p class="phase-item">Website UX overhaul</p>
-        <p class="phase-item">Email list building, CRM setup</p>
-      </div>
-      <div class="phase teal">
-        <p class="phase-label">Launch, Jan–Aug 2026</p>
-        <p class="phase-title">Peak activation</p>
-        <p class="phase-item">Meta, TikTok, YouTube ad campaigns</p>
-        <p class="phase-item">UNiDAYS partnership goes live</p>
-        <p class="phase-item">#UnchartedScilly UGC challenge</p>
-        <p class="phase-item">On-island wellness zones</p>
-      </div>
-    </div>
-
-    <h3 class="h3">Budget & control</h3>
-    <div class="metric-row reveal">
-      <div class="metric"><div class="metric-num">£150K</div><div class="metric-label">Total budget</div></div>
-      <div class="metric"><div class="metric-num">27%</div><div class="metric-label">Digital awareness</div></div>
-      <div class="metric"><div class="metric-num">5.1:1</div><div class="metric-label">Conservative ROI</div></div>
-      <div class="metric"><div class="metric-num">9.3:1</div><div class="metric-label">Optimistic ROI</div></div>
-    </div>
-
-    <hr class="divider">
-
-    <p class="label">Client 02, Nicola's Chocolate</p>
-    <h2 class="h2">"Let It Melt You", <em>building an artisan brand</em></h2>
-    <p class="body-text">Nicola's Chocolate is a bean-to-bar, micro-batch maker based in Exeter. Founded by a former teacher turned award-winning chocolatier. Pre-campaign revenue: £25K/year. One-person operation.</p>
-
-    <div class="metric-row reveal">
-      <div class="metric"><div class="metric-num">£25K</div><div class="metric-label">Starting revenue</div></div>
-      <div class="metric"><div class="metric-num">79%</div><div class="metric-label">Gross margin</div></div>
-      <div class="metric"><div class="metric-num">£20K</div><div class="metric-label">Budget</div></div>
-      <div class="metric"><div class="metric-num">12 mo</div><div class="metric-label">Duration</div></div>
-    </div>
-
-    <div class="insight-soft reveal">
-      <p class="insight-soft-label">Key strategic insight</p>
-      <p class="insight-soft-text">The path isn't to become bigger, but to become more resonant, deepening engagement through emotional branding before scaling distribution.</p>
-    </div>
-
-    <h3 class="h3">Strategy</h3>
-    <p class="body-text">Primary: <strong>market penetration</strong>. Positioning: "Nicola's Chocolate isn't just a treat, it's an invitation to slow down and savour the moment." Hero–Hub–Help content model.</p>
-
-    <h3 class="h3">Tactics & creative</h3>
-    <div class="creative-grid reveal">
-      <div class="creative">
-        <div class="creative-header choc"><p class="creative-top">Nicola's</p><p class="creative-name">Hero film: 'Let It Melt You'</p></div>
-        <div class="creative-body"><p class="creative-desc">60-second ASMR-style video, slow-motion melts, textured close-ups, ambient music.</p>
-        <div class="creative-tags"><span class="creative-tag">Video</span><span class="creative-tag">ASMR</span><span class="creative-tag">Emotional</span></div></div>
-      </div>
-      <div class="creative">
-        <div class="creative-header choc"><p class="creative-top">Nicola's</p><p class="creative-name">'Feeling of the week'</p></div>
-        <div class="creative-body"><p class="creative-desc">Weekly Instagram posts pairing emotional themes with specific bars.</p>
-        <div class="creative-tags"><span class="creative-tag">Instagram</span><span class="creative-tag">Series</span><span class="creative-tag">Storytelling</span></div></div>
-      </div>
-      <div class="creative">
-        <div class="creative-header choc"><p class="creative-top">Nicola's</p><p class="creative-name">Guerrilla: 'Missing: Stillness'</p></div>
-        <div class="creative-body"><p class="creative-desc">Emotion-based posters with QR codes in cafes and yoga studios.</p>
-        <div class="creative-tags"><span class="creative-tag">Guerrilla</span><span class="creative-tag">QR</span><span class="creative-tag">Lead gen</span></div></div>
-      </div>
-    </div>
-
-    <h3 class="h3">Budget & control</h3>
-    <div class="metric-row reveal">
-      <div class="metric"><div class="metric-num">£20K</div><div class="metric-label">Total budget</div></div>
-      <div class="metric"><div class="metric-num">£6.5K</div><div class="metric-label">Q4 peak phase</div></div>
-      <div class="metric"><div class="metric-num">225%</div><div class="metric-label">Projected ROI</div></div>
-      <div class="metric"><div class="metric-num">£100K</div><div class="metric-label">Revenue target</div></div>
-    </div>
-
-    <hr class="divider">
-
-    <p class="label">Comparative analysis</p>
-    <h2 class="h2">Same framework,<br><em>different playbooks.</em></h2>
-
-    <table class="compare-table reveal">
-      <thead>
-        <tr><th>Dimension</th><th style="color:#1d9e75;">Scilly Uncharted</th><th style="color:#c8471a;">Let It Melt You</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Industry</td><td>Tourism / transport</td><td>Artisan food / D2C</td></tr>
-        <tr><td>Budget</td><td>£150,000</td><td>£20,000</td></tr>
-        <tr><td>Ansoff strategy</td><td>Market development</td><td>Market penetration</td></tr>
-        <tr><td>Audience</td><td>Gen Z + Millennials, 18–35</td><td>Conscious consumers, 25–55</td></tr>
-        <tr><td>Content model</td><td>Owned–Paid–Earned (RACE)</td><td>Hero–Hub–Help</td></tr>
-        <tr><td>Key channels</td><td>TikTok, Instagram, YouTube, UNiDAYS</td><td>Instagram, Meta Ads, email, guerrilla</td></tr>
-        <tr><td>Revenue forecast</td><td>£765K, £1.4M</td><td>£100K (from £25K base)</td></tr>
-      </tbody>
-    </table>
-
-    <div class="takeaway-grid reveal">
-      <div class="takeaway"><p class="takeaway-title">Budget shapes tactics, not ambition</p><p class="takeaway-text">IST's £150K enabled influencer partnerships and platform deals. Nicola's £20K demanded scrappier execution, guerrilla posters, founder-led content, phased spend. Both forecast strong ROI because tactics matched scale.</p></div>
-      <div class="takeaway"><p class="takeaway-title">Ansoff drives different risk profiles</p><p class="takeaway-text">IST pursued market development, higher risk, higher reward. Nicola's pursued market penetration, lower risk, but sharper creative differentiation was required.</p></div>
-      <div class="takeaway"><p class="takeaway-title">Content models match brand maturity</p><p class="takeaway-text">IST used integrated owned–paid–earned for a destination with strong visual assets. Nicola's used Hero–Hub–Help to build from zero awareness.</p></div>
-      <div class="takeaway"><p class="takeaway-title">Emotional vs. aspirational positioning</p><p class="takeaway-text">IST's campaign is aspirational, making Scilly feel undiscovered. Nicola's is emotional, making chocolate feel like a mindful pause. Both differentiated, tuned to different triggers.</p></div>
-    </div>
-
-    <div class="exec-block reveal">
-      <h3 class="h3" style="margin-top:0;">How real-world execution would differ</h3>
-      <div class="exec-grid">
-        <div>
-          <p class="exec-label teal">Isles of Scilly Travel</p>
-          <p class="exec-text">Would run through an agency with dedicated social, PR, and partnerships leads. The UNiDAYS deal requires commercial negotiation and co-branded asset approval. On-island activations need logistics coordination and council permissions.</p>
-        </div>
-        <div>
-          <p class="exec-label coral">Nicola's Chocolate</p>
-          <p class="exec-text">Founder-driven with light freelance support. Hero film shot in a day. Guerrilla posters need a printer and cafe relationships. Critical hire: part-time social media manager. Shopify and Mailchimp handle the rest.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section><div class="container">
-  <p class="label">Feedback</p>
-  <div class="feedback-block reveal">
-    <p class="feedback-quote">"A very good grasp of both academic frameworks and their practical application in a real-world marketing context."</p>
-    <p class="feedback-quote">"A very good submission that reflects a strong grasp of both academic frameworks and their practical application. It will stand the student in good stead for the future."</p>
-    <p class="feedback-attr">Dr Alby Anand Kurian<span>Senior Lecturer in Marketing, University of Exeter Business School</span></p>
-  </div>
-</div></section>
-
-
-<footer><p>Karan Melur Dinesh</p><p>2026</p></footer>
-<script>
-const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>o.observe(el));
-document.querySelector('.nav-toggle')?.addEventListener('click',()=>document.querySelector('nav').classList.toggle('nav-open'));
-document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('nav-open')));
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals(){ return {}; }
+  componentDidMount(){
+    const deck = document.getElementById('scrolldeck');
+    if(!deck || deck.dataset.scrollInit) return;
+    deck.dataset.scrollInit = '1';
+    const slides = Array.from(deck.querySelectorAll(':scope > section'));
+    slides.forEach((sec)=>{
+      const frame = document.createElement('div');
+      frame.style.cssText = 'position:relative;width:100%;aspect-ratio:1920/1080;overflow:hidden;';
+      sec.parentNode.insertBefore(frame, sec);
+      frame.appendChild(sec);
+      sec.style.position = 'absolute';
+      sec.style.top = '0';
+      sec.style.left = '0';
+      sec.style.width = '1920px';
+      sec.style.height = '1080px';
+      sec.style.transformOrigin = 'top left';
+    });
+    const scale = ()=>{
+      const s = deck.clientWidth / 1920;
+      slides.forEach((sec)=>{ sec.style.transform = 'scale(' + s + ')'; });
+    };
+    scale();
+    if(window.ResizeObserver){
+      this._ro = new ResizeObserver(scale);
+      this._ro.observe(deck);
+    }
+    this._onResize = scale;
+    window.addEventListener('resize', scale);
+  }
+  componentWillUnmount(){
+    if(this._ro) this._ro.disconnect();
+    if(this._onResize) window.removeEventListener('resize', this._onResize);
+  }
+}
 </script>
 </body>
 </html>

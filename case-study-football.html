@@ -1,264 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Football Community — Karan Melur Dinesh</title>
-<meta name="description" content="Built a football community of 100+ members through word of mouth at the University of Exeter.">
-<meta property="og:title" content="Football Community — Karan Melur Dinesh">
-<meta property="og:description" content="Built a football community of 100+ members through word of mouth at the University of Exeter.">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>K</text></svg>">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-:root {
-  --ink: #1a1a1a; --ink-soft: #2a2a2a; --paper: #f5f2ec; --cream: #ede9e0;
-  --accent: #c8471a; --accent-soft: #e8a882; --muted: #7a7060; --muted-dark: #5a5448;
-  --border: #d5cfc4; --border-soft: #e5e0d6;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font-family:'Outfit',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.25rem 3rem;background:rgba(245,242,236,0.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav-logo{font-family:'DM Mono',monospace;font-size:.78rem;letter-spacing:.14em;color:var(--muted-dark);text-transform:uppercase;text-decoration:none}
-.nav-links{display:flex;gap:2rem;align-items:baseline}
-.nav-links a{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;font-family:'DM Mono',monospace}
-.nav-links a:hover,.nav-links a.active{color:var(--accent)}
-.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px}
-.nav-toggle span{display:block;width:20px;height:2px;background:var(--ink);margin:4px 0;transition:all .3s}
-.nav-open .nav-toggle span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
-.nav-open .nav-toggle span:nth-child(2){opacity:0}
-.nav-open .nav-toggle span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
-.container{max-width:1200px;margin:0 auto;padding:0 3rem}
-section{padding:5rem 0}
-.label{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;display:flex;align-items:center;gap:1rem}
-.label::after{content:'';flex:1;height:1px;background:var(--border)}
-.h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5.5vw,4.8rem);font-weight:300;line-height:1.05}
-.h1 em{font-style:italic;color:var(--accent)}
-.h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.8vw,2.8rem);font-weight:300;line-height:1.15}
-.h2 em{font-style:italic;color:var(--accent)}
-.h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;line-height:1.3;margin:2rem 0 .8rem}
-.body-text{font-size:.95rem;color:var(--muted-dark);line-height:1.85;margin-bottom:1.2rem}
-.btn-primary{padding:.8rem 1.8rem;background:var(--ink);color:var(--paper);text-decoration:none;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-family:'DM Mono',monospace;transition:background .2s;border-radius:2px;display:inline-block}
-.btn-primary:hover{background:var(--accent)}
-.btn-ghost{padding:.8rem 1.8rem;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-family:'DM Mono',monospace;transition:all .2s;border-radius:2px;display:inline-block;background:transparent}
-.btn-ghost:hover{background:var(--ink);color:var(--paper)}
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-footer{padding:2rem 3rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto}
-footer p{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
-@media(max-width:900px){
-  nav{padding:1rem 1.5rem}
-  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--border);flex-direction:column;padding:1.5rem 2rem;gap:1.2rem}
-  .nav-open .nav-links{display:flex}
-  .nav-toggle{display:block}
-  .container{padding:0 1.5rem}
-  section{padding:3rem 0}
-  footer{flex-direction:column;gap:.5rem;text-align:center}
-}
-
-
-.hero-cs{padding:8rem 0 3rem}
-.hero-cs .h1{margin:1rem 0 1.5rem}
-.hero-cs p{font-size:1.05rem;color:var(--muted-dark);max-width:700px;line-height:1.85}
-.hero-cs p+p{margin-top:1rem}
-.hero-gallery{display:grid;grid-template-columns:2fr 1fr;gap:1rem;margin:2rem 0}
-.hero-gallery img{width:100%;display:block;border-radius:4px}
-.hero-gallery .main{aspect-ratio:16/9;object-fit:cover}
-.hero-gallery .side{aspect-ratio:9/14;object-fit:cover;max-height:340px}
-.proof-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:2rem 0}
-.proof-card{padding:1.5rem 1.4rem;background:var(--cream);border-radius:4px}
-.proof-metric{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--accent);line-height:1}
-.proof-desc{font-size:.82rem;color:var(--muted-dark);margin-top:.5rem;line-height:1.65}
-.approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin:2.5rem 0}
-.approach-card{padding:1.8rem 1.6rem;border:1px solid var(--border);border-radius:4px;background:var(--paper)}
-.approach-num{font-family:'DM Mono',monospace;font-size:.6rem;color:var(--accent);letter-spacing:.18em;margin-bottom:.8rem}
-.approach-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:400;margin-bottom:.7rem}
-.approach-body{font-size:.88rem;color:var(--muted-dark);line-height:1.7}
-.insight-block{background:var(--ink);color:var(--paper);padding:2.8rem;margin:2.5rem 0;border-radius:4px;position:relative;overflow:hidden}
-.insight-block::before{content:'"';position:absolute;top:-3rem;left:1.5rem;font-family:'Cormorant Garamond',serif;font-size:14rem;color:rgba(200,71,26,.12);line-height:1;pointer-events:none}
-.insight-label{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:1.2rem}
-.insight-text{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;line-height:1.6;color:var(--paper);max-width:720px;position:relative;z-index:1}
-.insight-sub{margin-top:1.5rem;font-size:.95rem;color:#9a9080;line-height:1.85;max-width:680px;position:relative;z-index:1}
-.evidence-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
-.evidence-grid-2 img{width:100%;display:block;border-radius:4px}
-.evidence-grid-2.square img{aspect-ratio:1/1;object-fit:cover}
-.evidence-grid-2.landscape img{aspect-ratio:16/9;object-fit:cover;height:100%}
-.evidence-grid-2.wa img{aspect-ratio:auto;height:480px;object-fit:contain;background:#fafaf8}
-.evidence-grid-2.doc img{aspect-ratio:auto;height:420px;object-fit:contain;background:#fafaf8}
-.evidence-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
-.evidence-grid-3 img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px}
-@media(max-width:900px){
-  .hero-gallery{grid-template-columns:1fr}
-  .proof-row,.approach-grid{grid-template-columns:1fr 1fr}
-  .evidence-grid-2,.evidence-grid-3{grid-template-columns:1fr}
-}
-
-
-.football-hero-video{padding-top:4.5rem;background:var(--ink)}
-.football-hero-video-wrap{width:100%;aspect-ratio:16/9;max-height:70vh;overflow:hidden}
-.football-hero-video-wrap video{width:100%;height:100%;object-fit:cover;display:block}
-
-.fb-hero-video{padding-top:4.5rem;background:var(--ink)}
-.fb-hero-video-wrap{width:100%;aspect-ratio:16/9;max-height:70vh;overflow:hidden}
-.fb-hero-video-wrap video{width:100%;height:100%;object-fit:cover;display:block}
-
-.nav-dropdown{position:relative;display:flex;align-items:center}
-.nav-dropdown>a{cursor:pointer}
-.nav-dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.8rem 0;padding-top:1.2rem;min-width:170px;box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:200;margin-top:0}
-.nav-dropdown-menu::before{content:'';position:absolute;top:-10px;left:0;right:0;height:10px}
-.nav-dropdown-menu a{display:block;padding:.45rem 1.4rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);font-family:'DM Mono',monospace;text-decoration:none;transition:color .2s;white-space:nowrap}
-.nav-dropdown-menu a:hover{color:var(--accent)}
-.nav-dropdown:hover .nav-dropdown-menu{display:block}
-@media(max-width:900px){
-  .nav-dropdown-menu{position:static;transform:none;box-shadow:none;border:none;padding:0 0 0 1rem;margin:0;display:block;background:transparent}
-  .nav-dropdown-menu a{padding:.3rem 0}
-}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
 </head>
 <body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-.dropdown{position:relative}
-.dropdown-toggle{cursor:pointer}
-.dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.8rem 0;min-width:200px;box-shadow:0 4px 12px rgba(0,0,0,.08);z-index:200}
-.dropdown:hover .dropdown-menu{display:block}
-.dropdown-menu a{display:block;padding:.4rem 1.2rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-family:'DM Mono',monospace;transition:color .2s}
-.dropdown-menu a:hover,.dropdown-menu a.active{color:var(--accent)}
-@media(max-width:900px){
-  .dropdown-menu{position:static;display:none;border:none;box-shadow:none;padding:.3rem 0 .3rem 1rem}
-  .nav-open .dropdown .dropdown-menu{display:block}
-}
+  html,body{margin:0;padding:0;background:#f5f2ec;}
+  *{box-sizing:border-box;}
+  a{ -webkit-tap-highlight-color:transparent; }
+  ::selection{ background:#1a1a1a; color:#f5f2ec; }
+  img,video{display:block;}
+</style>
+</helmet>
+<template id="__bundler_thumbnail"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="200" fill="#1a1a1a"/><text x="100" y="120" fill="#f5f2ec" font-family="Helvetica,Arial,sans-serif" font-size="50" font-weight="700" letter-spacing="3" text-anchor="middle">KMD</text></svg></template>
 
-.nav-dropdown{position:relative;display:flex;align-items:center}
-.nav-dropdown>a{cursor:pointer}
-.nav-dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:.8rem 0;padding-top:1.2rem;min-width:170px;box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:200;margin-top:0}
-.nav-dropdown-menu::before{content:'';position:absolute;top:-10px;left:0;right:0;height:10px}
-.nav-dropdown-menu a{display:block;padding:.45rem 1.4rem;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-dark);font-family:'DM Mono',monospace;text-decoration:none;transition:color .2s;white-space:nowrap}
-.nav-dropdown-menu a:hover{color:var(--accent)}
-.nav-dropdown:hover .nav-dropdown-menu{display:block}
-@media(max-width:900px){
-  .nav-dropdown-menu{position:static;transform:none;box-shadow:none;border:none;padding:0 0 0 1rem;margin:0;display:block;background:transparent}
-  .nav-dropdown-menu a{padding:.3rem 0}
-}
-</style><nav>
-  <a href="index.html" class="nav-logo">KMD</a>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <div class="nav-dropdown">
-      <a href="index.html#work" class="active">Projects</a>
-      <div class="nav-dropdown-menu">
-        <a href="case-study-client.html">Client work</a>
-        <a href="case-study-mip.html">Marketing plans</a>
-        <a href="case-study-exeter.html">Visit Exeter</a>
-        <a href="case-study-football.html">Community</a>
+<div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400;background:#f5f2ec;color:#1a1a1a;line-height:1.65;overflow-x:hidden;">
+
+  <nav style="position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:19px clamp(20px,4vw,56px);background:rgba(245,242,236,0.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font-family:'DM Mono',monospace;">
+    <a href="index.html" style="font-size:12.5px;letter-spacing:0.16em;text-transform:uppercase;color:#1a1a1a;text-decoration:none;">KMD</a>
+    <div style="display:flex;gap:clamp(20px,2.6vw,38px);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;">
+      <a href="index.html" style="color:#8a7d68;text-decoration:none;" style-hover="color:#c8471a;">Home</a>
+      <a href="index.html#work" style="color:#1a1a1a;text-decoration:none;">Work</a>
+      <a href="index.html#contact" style="color:#8a7d68;text-decoration:none;" style-hover="color:#c8471a;">Contact</a>
+    </div>
+  </nav>
+
+  <section style="max-width:1280px;margin:0 auto;padding:clamp(80px,14vh,170px) clamp(20px,4vw,56px) clamp(40px,6vh,68px);">
+    <p style="font-family:'DM Mono',monospace;font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:#8a7d68;margin:0 0 30px;">Community Building · University of Exeter · 2024–25</p>
+    <h1 style="font-weight:600;font-size:clamp(2.4rem,5.6vw,5rem);line-height:1.02;letter-spacing:-0.03em;margin:0;max-width:15ch;">Started with 5 people. Grew to 100+ by word of mouth.</h1>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(24px,4vw,56px);margin-top:32px;max-width:980px;">
+      <p style="font-size:1rem;color:#5a5448;line-height:1.8;margin:0;">During my MSc year at Exeter, the goal was simple: find a few people to play football with. What started as 4–5 individuals quickly grew into a grassroots community of over 100 members across 3 WhatsApp groups — entirely through word of mouth, organic conversations, and showing up at other societies.</p>
+      <p style="font-size:1rem;color:#5a5448;line-height:1.8;margin:0;">The group grew so fast it got difficult to manage, so we segmented — separate groups by interest, preference, and ability. Weekly games for all levels, mini-tournaments with full fixture lists, friendlies against other universities, and socials well beyond the pitch. Players just had to show up.</p>
+    </div>
+  </section>
+
+  <div style="background:#1a1a1a;width:100%;overflow:hidden;">
+    <video autoplay muted loop playsinline preload="auto" style="width:100%;height:auto;max-height:80vh;object-fit:contain;background:#1a1a1a;">
+      <source src="videos/football-hero.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <section style="max-width:1280px;margin:0 auto;padding:clamp(52px,8vh,96px) clamp(20px,4vw,56px) clamp(28px,4vh,48px);">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;">
+      <div style="border-top:1px solid #d5cfc4;padding:24px 24px 24px 0;"><div style="font-weight:600;font-size:clamp(2.4rem,4.4vw,3.8rem);line-height:0.85;letter-spacing:-0.04em;">100+</div><div style="font-size:0.82rem;color:#5a5448;line-height:1.55;margin-top:14px;">Total members across all groups — purely organic, word-of-mouth growth.</div></div>
+      <div style="border-top:1px solid #d5cfc4;padding:24px;"><div style="font-weight:600;font-size:clamp(2.4rem,4.4vw,3.8rem);line-height:0.85;letter-spacing:-0.04em;">3</div><div style="font-size:0.82rem;color:#5a5448;line-height:1.55;margin-top:14px;">WhatsApp groups: Football Exeter (114), Casuals FC (83), and more.</div></div>
+      <div style="border-top:1px solid #d5cfc4;padding:24px;"><div style="font-weight:600;font-size:clamp(1.7rem,3vw,2.6rem);line-height:0.9;letter-spacing:-0.03em;">Weekly</div><div style="font-size:0.82rem;color:#5a5448;line-height:1.55;margin-top:14px;">Organised games — casual, competitive, and mini-tournaments.</div></div>
+      <div style="border-top:1px solid #d5cfc4;padding:24px 0 24px 24px;"><div style="font-weight:600;font-size:clamp(1.7rem,3vw,2.6rem);line-height:0.9;letter-spacing:-0.03em;">Year-long</div><div style="font-size:0.82rem;color:#5a5448;line-height:1.55;margin-top:14px;">Sustained engagement across the full 2024–25 academic year.</div></div>
+    </div>
+  </section>
+
+  <section style="max-width:1280px;margin:0 auto;padding:clamp(40px,6vh,72px) clamp(20px,4vw,56px);">
+    <p style="font-family:'DM Mono',monospace;font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:#8a7d68;margin:0 0 clamp(32px,5vh,52px);">What we built</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(28px,4vw,56px);">
+      <div style="border-top:1px solid #d5cfc4;padding-top:22px;">
+        <div style="font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#c8471a;margin-bottom:14px;">01 / Organisation</div>
+        <h3 style="font-weight:500;font-size:clamp(1.25rem,1.8vw,1.5rem);letter-spacing:-0.015em;margin:0 0 12px;">Games for every level</h3>
+        <p style="font-size:0.92rem;color:#5a5448;line-height:1.75;margin:0;">Casual kick-abouts, competitive matches, and structured mini-tournaments. We bought bibs and footballs. A member even built an AI-powered team-balancing system, rating players to generate fair teams automatically.</p>
+      </div>
+      <div style="border-top:1px solid #d5cfc4;padding-top:22px;">
+        <div style="font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#c8471a;margin-bottom:14px;">02 / Competition</div>
+        <h3 style="font-weight:500;font-size:clamp(1.25rem,1.8vw,1.5rem);letter-spacing:-0.015em;margin:0 0 12px;">Friendlies &amp; tournaments</h3>
+        <p style="font-size:0.92rem;color:#5a5448;line-height:1.75;margin:0;">Friendlies against other university groups and societies. Mini-tournaments with full fixture lists, results and top scorers tracked to keep things competitive. The structure made people come back week after week.</p>
+      </div>
+      <div style="border-top:1px solid #d5cfc4;padding-top:22px;">
+        <div style="font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#c8471a;margin-bottom:14px;">03 / Community</div>
+        <h3 style="font-weight:500;font-size:clamp(1.25rem,1.8vw,1.5rem);letter-spacing:-0.015em;margin:0 0 12px;">Beyond the pitch</h3>
+        <p style="font-size:0.92rem;color:#5a5448;line-height:1.75;margin:0;">Relationships built on the pitch became friendships off it — pub crawls, meetups, FIFA nights, pub quizzes, festivals. It became a real community, not just a sports group. That's what made people invite their friends.</p>
       </div>
     </div>
-    <a href="index.html#contact">Contact</a>
-  </div>
-  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
-</nav>
+  </section>
 
-<section class="hero-cs">
-  <div class="container">
-    <p class="label">Community Building, University of Exeter, 2024–25</p>
-    <h1 class="h1">Started with 5 people.<br><em>Grew to 100+ by word of mouth.</em></h1>
-    <p>During my MSc year at Exeter, the goal was simple: find a few people to play football with. What started as 4–5 high-energy individuals quickly grew into a grassroots community of over 100 members across 3 WhatsApp groups, entirely through word of mouth, organic conversations, and showing up at other societies.</p>
-    <p>The group grew so fast it got difficult to manage. We segmented, creating separate groups based on interest, preferences, and ability. We ran weekly games for all levels, mini-tournaments with full fixture lists, friendlies against other university groups, and socials that extended well beyond the pitch. Players just had to show up. Everything else was handled.</p>
-  </div>
-</section>
-
-<div style="background:var(--ink);width:100vw;margin-left:calc(-50vw + 50%);margin-right:calc(-50vw + 50%);">
-  <video autoplay muted loop playsinline style="width:100%;display:block;object-fit:contain;">
-    <source src="football-hero.mp4" type="video/mp4">
-  </video>
-</div>
-
-
-
-<section>
-  <div class="container">
-    <div class="proof-row reveal">
-      <div class="proof-card"><div class="proof-metric">100+</div><div class="proof-desc">Total members across all groups, purely organic, word-of-mouth growth</div></div>
-      <div class="proof-card"><div class="proof-metric">3</div><div class="proof-desc">WhatsApp groups: Football Exeter (114), Casuals FC (83), and more</div></div>
-      <div class="proof-card"><div class="proof-metric">Weekly</div><div class="proof-desc">Organised games, casual, competitive, and mini-tournaments</div></div>
-      <div class="proof-card"><div class="proof-metric">Year-long</div><div class="proof-desc">Sustained engagement across the full 2024–25 academic year</div></div>
+  <section style="border-top:1px solid #d5cfc4;">
+    <div style="max-width:920px;margin:0 auto;padding:clamp(48px,7vh,90px) clamp(20px,4vw,56px);">
+      <p style="font-family:'DM Mono',monospace;font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:#8a7d68;margin:0 0 28px;">The growth story</p>
+      <p style="font-weight:500;font-size:clamp(1.5rem,2.8vw,2.4rem);line-height:1.3;letter-spacing:-0.02em;margin:0;">It started with asking around. 4–5 people became 10, then 20. At some point the original group was overflowing — games oversubscribed, coordination broke down. So we segmented.</p>
+      <p style="font-size:1rem;color:#5a5448;line-height:1.8;margin:24px 0 0;">"Football Exeter" became the main hub (114 members); "Casuals FC" for the relaxed crowd (83). It wasn't a marketing strategy, it was necessity. But the principles are identical to what I'd do for a brand: understand your audience, remove friction, segment by behaviour, and let the community do the acquisition for you.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-<section>
-  <div class="container">
-    <p class="label">What we built</p>
-    <div class="approach-grid reveal">
-      <div class="approach-card">
-        <div class="approach-num">01 / Organisation</div>
-        <h4 class="approach-title">Games for every level</h4>
-        <p class="approach-body">Casual kick-abouts, competitive matches, and structured mini-tournaments. We bought bibs and footballs. A member even built an AI-powered team balancing system, rating players on stats and abilities to generate fair teams automatically. Members just showed up and played.</p>
+  <!-- EVIDENCE -->
+  <section style="border-top:1px solid #d5cfc4;">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,7vh,90px) clamp(20px,4vw,56px);">
+      <p style="font-family:'DM Mono',monospace;font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:#8a7d68;margin:0 0 clamp(36px,5vh,56px);text-align:center;">Group chats</p>
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,64px);justify-content:center;align-items:flex-start;">
+        <figure style="margin:0;width:min(300px,82vw);">
+          <div style="border-radius:12px;overflow:hidden;border:1px solid #d5cfc4;background:#fff;box-shadow:0 12px 40px rgba(26,16,8,0.08);"><img src="img/fb-exeter.jpg" alt="Football Exeter WhatsApp group" style="width:100%;height:auto;" /></div>
+          <figcaption style="font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#8a7d68;margin-top:16px;text-align:center;">Football Exeter · 114 members</figcaption>
+        </figure>
+        <figure style="margin:0;width:min(300px,82vw);">
+          <div style="border-radius:12px;overflow:hidden;border:1px solid #d5cfc4;background:#fff;box-shadow:0 12px 40px rgba(26,16,8,0.08);"><img src="img/fb-casuals.jpg" alt="Casuals FC WhatsApp group" style="width:100%;height:auto;" /></div>
+          <figcaption style="font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#8a7d68;margin-top:16px;text-align:center;">Casuals FC · 83 members</figcaption>
+        </figure>
       </div>
-      <div class="approach-card">
-        <div class="approach-num">02 / Competition</div>
-        <h4 class="approach-title">Friendlies & tournaments</h4>
-        <p class="approach-body">Played friendlies against other university groups and societies. Organised mini-tournaments with full fixture lists, tracked results and top scorers to keep things competitive and engaging. The structure made people come back week after week.</p>
-      </div>
-      <div class="approach-card">
-        <div class="approach-num">03 / Community</div>
-        <h4 class="approach-title">Beyond the pitch</h4>
-        <p class="approach-body">Relationships built on the pitch turned into genuine friendships off it, pub crawls, meetups, FIFA game nights, pub quizzes, and festivals. It became a real community, not just a sports group. That's what made people invite their friends.</p>
+
+      <p style="font-family:'DM Mono',monospace;font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:#8a7d68;margin:clamp(52px,8vh,90px) 0 clamp(28px,4vh,40px);text-align:center;">Fixtures &amp; results</p>
+      <div style="max-width:740px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(16px,2.5vw,28px);">
+        <figure style="margin:0;">
+          <img src="img/fb-fixtures1.jpg" alt="Tournament fixtures" style="width:100%;height:auto;border-radius:4px;border:1px solid #e5e0d6;" />
+          <figcaption style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#8a7d68;margin-top:10px;">Tournament fixtures</figcaption>
+        </figure>
+        <figure style="margin:0;">
+          <img src="img/fb-fixtures2.jpg" alt="Tournament results and final standings" style="width:100%;height:auto;border-radius:4px;border:1px solid #e5e0d6;" />
+          <figcaption style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#8a7d68;margin-top:10px;">Results &amp; final standings</figcaption>
+        </figure>
       </div>
     </div>
+  </section>
 
-    <div class="insight-block reveal">
-      <p class="insight-label">The growth story</p>
-      <p class="insight-text">It started with asking around. 4–5 people became 10, then 20. At some point the original group was overflowing, games were oversubscribed, coordination broke down.</p>
-      <p class="insight-sub">So we segmented. Created separate groups for different ability levels and commitment types. "Football Exeter" became the main hub (114 members). "Casuals FC" for the relaxed crowd (83 members). This wasn't a marketing strategy, it was necessity. But the principles are identical to what I'd do for a brand: understand your audience, remove friction, segment by behaviour, and let the community do the acquisition for you.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <p class="label">Evidence</p>
-    <div class="evidence-grid-2 wa reveal">
-      <img loading="lazy" src="img/fb-exeter.jpg" alt="Football Exeter WhatsApp, 114 members">
-      <img loading="lazy" src="img/fb-casuals.jpg" alt="Casuals FC WhatsApp, 83 members">
-    </div>
-    <div class="evidence-grid-2 doc reveal">
-      <img loading="lazy" src="img/fb-fixtures1.jpg" alt="Tournament fixtures, Al Nassr, Barcelona, Real Madrid, Nottingham Forest">
-      <img loading="lazy" src="img/fb-fixtures2.jpg" alt="Tournament results and final standings">
-    </div>
-
-    <p class="label" style="margin-top:3rem;">On the pitch</p>
-    <div class="reveal" style="border-radius:4px;overflow:hidden;">
-      <video autoplay muted loop playsinline style="width:100%;display:block;border-radius:4px;">
-        <source src="football-collage.mp4" type="video/mp4">
+  <!-- ON THE PITCH -->
+  <section style="max-width:1280px;margin:0 auto;padding:clamp(48px,7vh,90px) clamp(20px,4vw,56px);">
+    <p style="font-family:'DM Mono',monospace;font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:#8a7d68;margin:0 0 clamp(28px,4vh,40px);">On the pitch</p>
+    <div style="border-radius:6px;overflow:hidden;background:#1a1a1a;">
+      <video autoplay muted loop playsinline preload="auto" style="width:100%;height:auto;display:block;">
+        <source src="videos/football-collage.mp4" type="video/mp4">
       </video>
     </div>
-  </div>
-</section>
+  </section>
 
-<section>
-  <div class="container">
-    <div class="insight-block reveal">
-      <p class="insight-label">Why this matters for marketing</p>
-      <p class="insight-text">Community building is marketing at its most fundamental. No budget, no ads, no algorithm, just understanding what people want, removing friction, and creating something worth showing up to.</p>
-      <p class="insight-sub">The same principles behind growing a following or launching a campaign apply here: know your audience, deliver consistent value, segment when it gets unwieldy, make participation effortless, and let the community do the marketing for you. 100+ people joined through nothing but word of mouth. That's organic growth in its purest form.</p>
+  <!-- WHY THIS MATTERS -->
+  <section style="background:#1a1a1a;color:#f5f2ec;padding:clamp(64px,11vh,140px) clamp(20px,4vw,56px);">
+    <div style="max-width:1000px;margin:0 auto;">
+      <p style="font-family:'DM Mono',monospace;font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:#9a9080;margin:0 0 30px;">Why this matters for marketing</p>
+      <p style="font-weight:500;font-size:clamp(1.6rem,3.2vw,3rem);line-height:1.22;letter-spacing:-0.025em;margin:0;">Community building is marketing at its most fundamental. No budget, no ads, no algorithm — just understanding what people want, removing friction, and creating something worth showing up to.</p>
+      <p style="font-size:1.02rem;color:#9a9080;line-height:1.8;margin:30px 0 0;max-width:820px;">Know your audience, deliver consistent value, segment when it gets unwieldy, make participation effortless, and let the community do the marketing for you. 100+ people joined through nothing but word of mouth — organic growth in its purest form.</p>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- PREV / NEXT -->
+  <nav style="max-width:1280px;margin:0 auto;padding:clamp(44px,7vh,90px) clamp(20px,4vw,56px);display:flex;justify-content:space-between;gap:24px;border-top:1px solid #d5cfc4;">
+    <a href="case-study-exeter.html" style="text-decoration:none;color:#1a1a1a;max-width:46%;" style-hover="color:#c8471a;">
+      <div style="font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#8a7d68;margin-bottom:12px;">← Previous</div>
+      <div style="font-weight:600;font-size:clamp(1.3rem,2.6vw,2.1rem);letter-spacing:-0.02em;line-height:1.1;">Visit Exeter</div>
+    </a>
+    <a href="case-study-client.html" style="text-decoration:none;color:#1a1a1a;max-width:46%;text-align:right;" style-hover="color:#c8471a;">
+      <div style="font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#8a7d68;margin-bottom:12px;">Next →</div>
+      <div style="font-weight:600;font-size:clamp(1.3rem,2.6vw,2.1rem);letter-spacing:-0.02em;line-height:1.1;">Client Work</div>
+    </a>
+  </nav>
 
+  <footer style="max-width:1280px;margin:0 auto;padding:36px clamp(20px,4vw,56px);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;border-top:1px solid #e5e0d6;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8a7d68;">
+    <span>Karan Melur Dinesh</span>
+    <div style="display:flex;gap:24px;">
+      <a href="about.html" style="color:#8a7d68;text-decoration:none;" style-hover="color:#c8471a;">About</a>
+      <a href="mailto:karanmd8828@gmail.com" style="color:#8a7d68;text-decoration:none;" style-hover="color:#c8471a;">Email</a>
+      <a href="https://www.linkedin.com/in/karanmelurdinesh/" target="_blank" rel="noopener" style="color:#8a7d68;text-decoration:none;" style-hover="color:#c8471a;">LinkedIn</a>
+    </div>
+    <span>© 2026</span>
+  </footer>
 
-<footer><p>Karan Melur Dinesh</p><p>2026</p></footer>
-<script>
-const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>o.observe(el));
-document.querySelector('.nav-toggle')?.addEventListener('click',()=>document.querySelector('nav').classList.toggle('nav-open'));
-document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('nav-open')));
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount(){
+    document.querySelectorAll('video[autoplay]').forEach((v)=>{
+      v.muted = true;
+      v.setAttribute('muted','');
+      const p = v.play();
+      if(p && p.catch) p.catch(()=>{});
+    });
+  }
+}
 </script>
 </body>
 </html>
